@@ -1,0 +1,2602 @@
+{
+  "scenario": "non_iid",
+  "total_rounds": 15,
+  "round_timeout": 2.5,
+  "local_epochs": 10,
+  "lr": 0.03,
+  "batch_size": 64,
+  "initial_eval": {
+    "loss": 1.2987,
+    "accuracy": 0.4649,
+    "precision": 0.2917,
+    "recall": 0.4297,
+    "f1": 0.3464,
+    "f1_weighted": 0.3724,
+    "f1_per_class": [
+      0.6867,
+      0.3526,
+      0.0
+    ],
+    "confusion_matrix": [
+      [
+        503,
+        61,
+        0
+      ],
+      [
+        273,
+        180,
+        0
+      ],
+      [
+        125,
+        327,
+        0
+      ]
+    ]
+  },
+  "history": [
+    {
+      "round": 1,
+      "reason": "ALL_CLIENTS_RESPONDED",
+      "active_clients": [
+        1,
+        2,
+        3
+      ],
+      "missing_clients": [],
+      "num_active_clients": 3,
+      "weighting_factors": {
+        "client_2": 0.3197,
+        "client_3": 0.3071,
+        "client_1": 0.3733
+      },
+      "client_drift_l2": {
+        "client_2": 0.9117,
+        "client_3": 0.7938,
+        "client_1": 0.7136
+      },
+      "mean_client_drift_l2": 0.8064,
+      "global_metrics": {
+        "loss": 0.4986,
+        "accuracy": 0.8012,
+        "precision": 0.7966,
+        "recall": 0.7917,
+        "f1": 0.7864,
+        "f1_weighted": 0.7917,
+        "f1_per_class": [
+          0.8576,
+          0.6393,
+          0.8623
+        ],
+        "confusion_matrix": [
+          [
+            518,
+            41,
+            5
+          ],
+          [
+            120,
+            249,
+            84
+          ],
+          [
+            6,
+            36,
+            410
+          ]
+        ]
+      },
+      "client_metrics": {
+        "client_2": {
+          "loss": 0.3041,
+          "accuracy": 0.902,
+          "precision": 0.8508,
+          "recall": 0.6357,
+          "f1": 0.706,
+          "f1_weighted": 0.889,
+          "f1_per_class": [
+            0.513,
+            0.9445,
+            0.6604
+          ],
+          "confusion_matrix": [
+            [
+              59,
+              99,
+              0
+            ],
+            [
+              13,
+              1565,
+              15
+            ],
+            [
+              0,
+              57,
+              70
+            ]
+          ]
+        },
+        "client_3": {
+          "loss": 0.1863,
+          "accuracy": 0.9324,
+          "precision": 0.7345,
+          "recall": 0.6269,
+          "f1": 0.6244,
+          "f1_weighted": 0.9127,
+          "f1_per_class": [
+            0.7448,
+            0.1587,
+            0.9697
+          ],
+          "confusion_matrix": [
+            [
+              54,
+              5,
+              9
+            ],
+            [
+              16,
+              10,
+              82
+            ],
+            [
+              7,
+              3,
+              1618
+            ]
+          ]
+        },
+        "client_1": {
+          "loss": 0.168,
+          "accuracy": 0.9453,
+          "precision": 0.7738,
+          "recall": 0.6275,
+          "f1": 0.6521,
+          "f1_weighted": 0.9295,
+          "f1_per_class": [
+            0.973,
+            0.1832,
+            0.8
+          ],
+          "confusion_matrix": [
+            [
+              2019,
+              5,
+              6
+            ],
+            [
+              94,
+              12,
+              3
+            ],
+            [
+              7,
+              5,
+              42
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "round": 2,
+      "reason": "ALL_CLIENTS_RESPONDED",
+      "active_clients": [
+        1,
+        2,
+        3
+      ],
+      "missing_clients": [],
+      "num_active_clients": 3,
+      "weighting_factors": {
+        "client_2": 0.3197,
+        "client_3": 0.3071,
+        "client_1": 0.3733
+      },
+      "client_drift_l2": {
+        "client_2": 0.7503,
+        "client_3": 0.6277,
+        "client_1": 0.5925
+      },
+      "mean_client_drift_l2": 0.6568,
+      "global_metrics": {
+        "loss": 0.4313,
+        "accuracy": 0.8319,
+        "precision": 0.8271,
+        "recall": 0.8253,
+        "f1": 0.8248,
+        "f1_weighted": 0.829,
+        "f1_per_class": [
+          0.8803,
+          0.7207,
+          0.8734
+        ],
+        "confusion_matrix": [
+          [
+            515,
+            45,
+            4
+          ],
+          [
+            86,
+            307,
+            60
+          ],
+          [
+            5,
+            47,
+            400
+          ]
+        ]
+      },
+      "client_metrics": {
+        "client_2": {
+          "loss": 0.2713,
+          "accuracy": 0.9121,
+          "precision": 0.8515,
+          "recall": 0.6911,
+          "f1": 0.753,
+          "f1_weighted": 0.9045,
+          "f1_per_class": [
+            0.6304,
+            0.9497,
+            0.6789
+          ],
+          "confusion_matrix": [
+            [
+              81,
+              77,
+              0
+            ],
+            [
+              18,
+              1558,
+              17
+            ],
+            [
+              0,
+              53,
+              74
+            ]
+          ]
+        },
+        "client_3": {
+          "loss": 0.1628,
+          "accuracy": 0.9401,
+          "precision": 0.7956,
+          "recall": 0.6874,
+          "f1": 0.7128,
+          "f1_weighted": 0.9301,
+          "f1_per_class": [
+            0.7714,
+            0.3947,
+            0.9723
+          ],
+          "confusion_matrix": [
+            [
+              54,
+              5,
+              9
+            ],
+            [
+              11,
+              30,
+              67
+            ],
+            [
+              7,
+              9,
+              1612
+            ]
+          ]
+        },
+        "client_1": {
+          "loss": 0.1531,
+          "accuracy": 0.9471,
+          "precision": 0.7811,
+          "recall": 0.6544,
+          "f1": 0.6818,
+          "f1_weighted": 0.9348,
+          "f1_per_class": [
+            0.9741,
+            0.2676,
+            0.8037
+          ],
+          "confusion_matrix": [
+            [
+              2015,
+              9,
+              6
+            ],
+            [
+              86,
+              19,
+              4
+            ],
+            [
+              6,
+              5,
+              43
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "round": 3,
+      "reason": "ALL_CLIENTS_RESPONDED",
+      "active_clients": [
+        1,
+        2,
+        3
+      ],
+      "missing_clients": [],
+      "num_active_clients": 3,
+      "weighting_factors": {
+        "client_2": 0.3197,
+        "client_3": 0.3071,
+        "client_1": 0.3733
+      },
+      "client_drift_l2": {
+        "client_2": 0.6817,
+        "client_3": 0.5939,
+        "client_1": 0.5545
+      },
+      "mean_client_drift_l2": 0.61,
+      "global_metrics": {
+        "loss": 0.4055,
+        "accuracy": 0.8421,
+        "precision": 0.8384,
+        "recall": 0.8374,
+        "f1": 0.8379,
+        "f1_weighted": 0.8418,
+        "f1_per_class": [
+          0.8903,
+          0.7525,
+          0.8708
+        ],
+        "confusion_matrix": [
+          [
+            507,
+            53,
+            4
+          ],
+          [
+            63,
+            339,
+            51
+          ],
+          [
+            5,
+            56,
+            391
+          ]
+        ]
+      },
+      "client_metrics": {
+        "client_2": {
+          "loss": 0.2575,
+          "accuracy": 0.9132,
+          "precision": 0.8703,
+          "recall": 0.6776,
+          "f1": 0.748,
+          "f1_weighted": 0.9044,
+          "f1_per_class": [
+            0.6426,
+            0.9505,
+            0.6509
+          ],
+          "confusion_matrix": [
+            [
+              80,
+              78,
+              0
+            ],
+            [
+              11,
+              1566,
+              16
+            ],
+            [
+              0,
+              58,
+              69
+            ]
+          ]
+        },
+        "client_3": {
+          "loss": 0.154,
+          "accuracy": 0.9457,
+          "precision": 0.8186,
+          "recall": 0.737,
+          "f1": 0.7615,
+          "f1_weighted": 0.939,
+          "f1_per_class": [
+            0.8286,
+            0.4819,
+            0.974
+          ],
+          "confusion_matrix": [
+            [
+              58,
+              5,
+              5
+            ],
+            [
+              7,
+              40,
+              61
+            ],
+            [
+              7,
+              13,
+              1608
+            ]
+          ]
+        },
+        "client_1": {
+          "loss": 0.1454,
+          "accuracy": 0.9485,
+          "precision": 0.7831,
+          "recall": 0.6718,
+          "f1": 0.7087,
+          "f1_weighted": 0.9402,
+          "f1_per_class": [
+            0.9753,
+            0.3625,
+            0.7885
+          ],
+          "confusion_matrix": [
+            [
+              2010,
+              15,
+              5
+            ],
+            [
+              76,
+              29,
+              4
+            ],
+            [
+              6,
+              7,
+              41
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "round": 4,
+      "reason": "ALL_CLIENTS_RESPONDED",
+      "active_clients": [
+        1,
+        2,
+        3
+      ],
+      "missing_clients": [],
+      "num_active_clients": 3,
+      "weighting_factors": {
+        "client_3": 0.3071,
+        "client_2": 0.3197,
+        "client_1": 0.3733
+      },
+      "client_drift_l2": {
+        "client_3": 0.5567,
+        "client_2": 0.6194,
+        "client_1": 0.5231
+      },
+      "mean_client_drift_l2": 0.5664,
+      "global_metrics": {
+        "loss": 0.39,
+        "accuracy": 0.8482,
+        "precision": 0.8439,
+        "recall": 0.8435,
+        "f1": 0.8435,
+        "f1_weighted": 0.8474,
+        "f1_per_class": [
+          0.8949,
+          0.759,
+          0.8767
+        ],
+        "confusion_matrix": [
+          [
+            511,
+            49,
+            4
+          ],
+          [
+            62,
+            337,
+            54
+          ],
+          [
+            5,
+            49,
+            398
+          ]
+        ]
+      },
+      "client_metrics": {
+        "client_3": {
+          "loss": 0.1486,
+          "accuracy": 0.9501,
+          "precision": 0.8434,
+          "recall": 0.7531,
+          "f1": 0.7851,
+          "f1_weighted": 0.9445,
+          "f1_per_class": [
+            0.8529,
+            0.5263,
+            0.9761
+          ],
+          "confusion_matrix": [
+            [
+              58,
+              5,
+              5
+            ],
+            [
+              6,
+              45,
+              57
+            ],
+            [
+              4,
+              13,
+              1611
+            ]
+          ]
+        },
+        "client_2": {
+          "loss": 0.2469,
+          "accuracy": 0.9207,
+          "precision": 0.8515,
+          "recall": 0.7449,
+          "f1": 0.7874,
+          "f1_weighted": 0.9163,
+          "f1_per_class": [
+            0.6947,
+            0.9545,
+            0.7131
+          ],
+          "confusion_matrix": [
+            [
+              91,
+              66,
+              1
+            ],
+            [
+              13,
+              1551,
+              29
+            ],
+            [
+              0,
+              40,
+              87
+            ]
+          ]
+        },
+        "client_1": {
+          "loss": 0.1401,
+          "accuracy": 0.9489,
+          "precision": 0.7801,
+          "recall": 0.6778,
+          "f1": 0.7123,
+          "f1_weighted": 0.9413,
+          "f1_per_class": [
+            0.9757,
+            0.3804,
+            0.781
+          ],
+          "confusion_matrix": [
+            [
+              2009,
+              16,
+              5
+            ],
+            [
+              73,
+              31,
+              5
+            ],
+            [
+              6,
+              7,
+              41
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "round": 5,
+      "reason": "ALL_CLIENTS_RESPONDED",
+      "active_clients": [
+        1,
+        2,
+        3
+      ],
+      "missing_clients": [],
+      "num_active_clients": 3,
+      "weighting_factors": {
+        "client_3": 0.3071,
+        "client_2": 0.3197,
+        "client_1": 0.3733
+      },
+      "client_drift_l2": {
+        "client_3": 0.5395,
+        "client_2": 0.5903,
+        "client_1": 0.4909
+      },
+      "mean_client_drift_l2": 0.5402,
+      "global_metrics": {
+        "loss": 0.3785,
+        "accuracy": 0.855,
+        "precision": 0.8522,
+        "recall": 0.8514,
+        "f1": 0.8518,
+        "f1_weighted": 0.8552,
+        "f1_per_class": [
+          0.8973,
+          0.7763,
+          0.8817
+        ],
+        "confusion_matrix": [
+          [
+            507,
+            53,
+            4
+          ],
+          [
+            54,
+            354,
+            45
+          ],
+          [
+            5,
+            52,
+            395
+          ]
+        ]
+      },
+      "client_metrics": {
+        "client_3": {
+          "loss": 0.1448,
+          "accuracy": 0.9507,
+          "precision": 0.8419,
+          "recall": 0.7666,
+          "f1": 0.7943,
+          "f1_weighted": 0.9459,
+          "f1_per_class": [
+            0.8613,
+            0.5455,
+            0.976
+          ],
+          "confusion_matrix": [
+            [
+              59,
+              4,
+              5
+            ],
+            [
+              6,
+              48,
+              54
+            ],
+            [
+              4,
+              16,
+              1608
+            ]
+          ]
+        },
+        "client_2": {
+          "loss": 0.236,
+          "accuracy": 0.9255,
+          "precision": 0.888,
+          "recall": 0.7283,
+          "f1": 0.7915,
+          "f1_weighted": 0.9197,
+          "f1_per_class": [
+            0.7203,
+            0.9572,
+            0.6968
+          ],
+          "confusion_matrix": [
+            [
+              94,
+              64,
+              0
+            ],
+            [
+              9,
+              1567,
+              17
+            ],
+            [
+              0,
+              50,
+              77
+            ]
+          ]
+        },
+        "client_1": {
+          "loss": 0.1361,
+          "accuracy": 0.9508,
+          "precision": 0.7897,
+          "recall": 0.702,
+          "f1": 0.7323,
+          "f1_weighted": 0.9443,
+          "f1_per_class": [
+            0.9764,
+            0.4167,
+            0.8037
+          ],
+          "confusion_matrix": [
+            [
+              2007,
+              18,
+              5
+            ],
+            [
+              69,
+              35,
+              5
+            ],
+            [
+              5,
+              6,
+              43
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "round": 6,
+      "reason": "ALL_CLIENTS_RESPONDED",
+      "active_clients": [
+        1,
+        2,
+        3
+      ],
+      "missing_clients": [],
+      "num_active_clients": 3,
+      "weighting_factors": {
+        "client_2": 0.3197,
+        "client_3": 0.3071,
+        "client_1": 0.3733
+      },
+      "client_drift_l2": {
+        "client_2": 0.5604,
+        "client_3": 0.5446,
+        "client_1": 0.4862
+      },
+      "mean_client_drift_l2": 0.5304,
+      "global_metrics": {
+        "loss": 0.3715,
+        "accuracy": 0.8604,
+        "precision": 0.8574,
+        "recall": 0.856,
+        "f1": 0.8566,
+        "f1_weighted": 0.86,
+        "f1_per_class": [
+          0.9021,
+          0.7812,
+          0.8864
+        ],
+        "confusion_matrix": [
+          [
+            516,
+            44,
+            4
+          ],
+          [
+            59,
+            350,
+            44
+          ],
+          [
+            5,
+            49,
+            398
+          ]
+        ]
+      },
+      "client_metrics": {
+        "client_2": {
+          "loss": 0.2303,
+          "accuracy": 0.9239,
+          "precision": 0.8638,
+          "recall": 0.7429,
+          "f1": 0.7938,
+          "f1_weighted": 0.9194,
+          "f1_per_class": [
+            0.7286,
+            0.9561,
+            0.6968
+          ],
+          "confusion_matrix": [
+            [
+              102,
+              56,
+              0
+            ],
+            [
+              20,
+              1556,
+              17
+            ],
+            [
+              0,
+              50,
+              77
+            ]
+          ]
+        },
+        "client_3": {
+          "loss": 0.1412,
+          "accuracy": 0.9507,
+          "precision": 0.8606,
+          "recall": 0.7561,
+          "f1": 0.794,
+          "f1_weighted": 0.9451,
+          "f1_per_class": [
+            0.8657,
+            0.5412,
+            0.9752
+          ],
+          "confusion_matrix": [
+            [
+              58,
+              2,
+              8
+            ],
+            [
+              5,
+              46,
+              57
+            ],
+            [
+              3,
+              14,
+              1611
+            ]
+          ]
+        },
+        "client_1": {
+          "loss": 0.1336,
+          "accuracy": 0.9521,
+          "precision": 0.8144,
+          "recall": 0.688,
+          "f1": 0.7269,
+          "f1_weighted": 0.9436,
+          "f1_per_class": [
+            0.977,
+            0.3846,
+            0.819
+          ],
+          "confusion_matrix": [
+            [
+              2015,
+              11,
+              4
+            ],
+            [
+              75,
+              30,
+              4
+            ],
+            [
+              5,
+              6,
+              43
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "round": 7,
+      "reason": "ALL_CLIENTS_RESPONDED",
+      "active_clients": [
+        1,
+        2,
+        3
+      ],
+      "missing_clients": [],
+      "num_active_clients": 3,
+      "weighting_factors": {
+        "client_3": 0.3071,
+        "client_2": 0.3197,
+        "client_1": 0.3733
+      },
+      "client_drift_l2": {
+        "client_3": 0.5185,
+        "client_2": 0.5374,
+        "client_1": 0.4672
+      },
+      "mean_client_drift_l2": 0.5077,
+      "global_metrics": {
+        "loss": 0.3635,
+        "accuracy": 0.8639,
+        "precision": 0.8613,
+        "recall": 0.8603,
+        "f1": 0.8607,
+        "f1_weighted": 0.8639,
+        "f1_per_class": [
+          0.9022,
+          0.7894,
+          0.8906
+        ],
+        "confusion_matrix": [
+          [
+            512,
+            48,
+            4
+          ],
+          [
+            54,
+            358,
+            41
+          ],
+          [
+            5,
+            48,
+            399
+          ]
+        ]
+      },
+      "client_metrics": {
+        "client_3": {
+          "loss": 0.1379,
+          "accuracy": 0.9523,
+          "precision": 0.8567,
+          "recall": 0.7672,
+          "f1": 0.7997,
+          "f1_weighted": 0.9473,
+          "f1_per_class": [
+            0.8676,
+            0.5549,
+            0.9767
+          ],
+          "confusion_matrix": [
+            [
+              59,
+              3,
+              6
+            ],
+            [
+              6,
+              48,
+              54
+            ],
+            [
+              3,
+              14,
+              1611
+            ]
+          ]
+        },
+        "client_2": {
+          "loss": 0.2222,
+          "accuracy": 0.9281,
+          "precision": 0.873,
+          "recall": 0.7596,
+          "f1": 0.808,
+          "f1_weighted": 0.9242,
+          "f1_per_class": [
+            0.7319,
+            0.9585,
+            0.7336
+          ],
+          "confusion_matrix": [
+            [
+              101,
+              57,
+              0
+            ],
+            [
+              17,
+              1558,
+              18
+            ],
+            [
+              0,
+              43,
+              84
+            ]
+          ]
+        },
+        "client_1": {
+          "loss": 0.13,
+          "accuracy": 0.9526,
+          "precision": 0.8162,
+          "recall": 0.7027,
+          "f1": 0.7427,
+          "f1_weighted": 0.9458,
+          "f1_per_class": [
+            0.9769,
+            0.4242,
+            0.8269
+          ],
+          "confusion_matrix": [
+            [
+              2011,
+              15,
+              4
+            ],
+            [
+              71,
+              35,
+              3
+            ],
+            [
+              5,
+              6,
+              43
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "round": 8,
+      "reason": "ALL_CLIENTS_RESPONDED",
+      "active_clients": [
+        1,
+        2,
+        3
+      ],
+      "missing_clients": [],
+      "num_active_clients": 3,
+      "weighting_factors": {
+        "client_3": 0.3071,
+        "client_2": 0.3197,
+        "client_1": 0.3733
+      },
+      "client_drift_l2": {
+        "client_3": 0.4834,
+        "client_2": 0.5325,
+        "client_1": 0.4621
+      },
+      "mean_client_drift_l2": 0.4927,
+      "global_metrics": {
+        "loss": 0.3582,
+        "accuracy": 0.8652,
+        "precision": 0.8649,
+        "recall": 0.863,
+        "f1": 0.8635,
+        "f1_weighted": 0.8662,
+        "f1_per_class": [
+          0.8998,
+          0.7983,
+          0.8924
+        ],
+        "confusion_matrix": [
+          [
+            503,
+            57,
+            4
+          ],
+          [
+            46,
+            374,
+            33
+          ],
+          [
+            5,
+            53,
+            394
+          ]
+        ]
+      },
+      "client_metrics": {
+        "client_3": {
+          "loss": 0.1361,
+          "accuracy": 0.9529,
+          "precision": 0.8379,
+          "recall": 0.7999,
+          "f1": 0.8161,
+          "f1_weighted": 0.9504,
+          "f1_per_class": [
+            0.8905,
+            0.5803,
+            0.9774
+          ],
+          "confusion_matrix": [
+            [
+              61,
+              6,
+              1
+            ],
+            [
+              5,
+              56,
+              47
+            ],
+            [
+              3,
+              23,
+              1602
+            ]
+          ]
+        },
+        "client_2": {
+          "loss": 0.222,
+          "accuracy": 0.9239,
+          "precision": 0.907,
+          "recall": 0.7047,
+          "f1": 0.7793,
+          "f1_weighted": 0.9163,
+          "f1_per_class": [
+            0.696,
+            0.9566,
+            0.6854
+          ],
+          "confusion_matrix": [
+            [
+              87,
+              71,
+              0
+            ],
+            [
+              5,
+              1575,
+              13
+            ],
+            [
+              0,
+              54,
+              73
+            ]
+          ]
+        },
+        "client_1": {
+          "loss": 0.1276,
+          "accuracy": 0.9535,
+          "precision": 0.8248,
+          "recall": 0.709,
+          "f1": 0.7482,
+          "f1_weighted": 0.9465,
+          "f1_per_class": [
+            0.9772,
+            0.4294,
+            0.8381
+          ],
+          "confusion_matrix": [
+            [
+              2012,
+              14,
+              4
+            ],
+            [
+              71,
+              35,
+              3
+            ],
+            [
+              5,
+              5,
+              44
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "round": 9,
+      "reason": "ALL_CLIENTS_RESPONDED",
+      "active_clients": [
+        1,
+        2,
+        3
+      ],
+      "missing_clients": [],
+      "num_active_clients": 3,
+      "weighting_factors": {
+        "client_2": 0.3197,
+        "client_3": 0.3071,
+        "client_1": 0.3733
+      },
+      "client_drift_l2": {
+        "client_2": 0.5067,
+        "client_3": 0.4769,
+        "client_1": 0.4453
+      },
+      "mean_client_drift_l2": 0.4763,
+      "global_metrics": {
+        "loss": 0.3527,
+        "accuracy": 0.8686,
+        "precision": 0.8662,
+        "recall": 0.8659,
+        "f1": 0.866,
+        "f1_weighted": 0.8687,
+        "f1_per_class": [
+          0.9017,
+          0.7974,
+          0.899
+        ],
+        "confusion_matrix": [
+          [
+            509,
+            51,
+            4
+          ],
+          [
+            51,
+            362,
+            40
+          ],
+          [
+            5,
+            42,
+            405
+          ]
+        ]
+      },
+      "client_metrics": {
+        "client_2": {
+          "loss": 0.212,
+          "accuracy": 0.9281,
+          "precision": 0.8689,
+          "recall": 0.7625,
+          "f1": 0.8081,
+          "f1_weighted": 0.9244,
+          "f1_per_class": [
+            0.7273,
+            0.9587,
+            0.7382
+          ],
+          "confusion_matrix": [
+            [
+              100,
+              57,
+              1
+            ],
+            [
+              17,
+              1557,
+              19
+            ],
+            [
+              0,
+              41,
+              86
+            ]
+          ]
+        },
+        "client_3": {
+          "loss": 0.1333,
+          "accuracy": 0.9557,
+          "precision": 0.859,
+          "recall": 0.798,
+          "f1": 0.8222,
+          "f1_weighted": 0.9523,
+          "f1_per_class": [
+            0.8905,
+            0.5978,
+            0.9784
+          ],
+          "confusion_matrix": [
+            [
+              61,
+              4,
+              3
+            ],
+            [
+              5,
+              55,
+              48
+            ],
+            [
+              3,
+              17,
+              1608
+            ]
+          ]
+        },
+        "client_1": {
+          "loss": 0.1255,
+          "accuracy": 0.9553,
+          "precision": 0.8392,
+          "recall": 0.7275,
+          "f1": 0.7638,
+          "f1_weighted": 0.9487,
+          "f1_per_class": [
+            0.9776,
+            0.454,
+            0.8598
+          ],
+          "confusion_matrix": [
+            [
+              2012,
+              14,
+              4
+            ],
+            [
+              69,
+              37,
+              3
+            ],
+            [
+              5,
+              3,
+              46
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "round": 10,
+      "reason": "ALL_CLIENTS_RESPONDED",
+      "active_clients": [
+        1,
+        2,
+        3
+      ],
+      "missing_clients": [],
+      "num_active_clients": 3,
+      "weighting_factors": {
+        "client_2": 0.3197,
+        "client_3": 0.3071,
+        "client_1": 0.3733
+      },
+      "client_drift_l2": {
+        "client_2": 0.4957,
+        "client_3": 0.4586,
+        "client_1": 0.439
+      },
+      "mean_client_drift_l2": 0.4644,
+      "global_metrics": {
+        "loss": 0.3495,
+        "accuracy": 0.8679,
+        "precision": 0.8673,
+        "recall": 0.8659,
+        "f1": 0.8663,
+        "f1_weighted": 0.8687,
+        "f1_per_class": [
+          0.8984,
+          0.8009,
+          0.8997
+        ],
+        "confusion_matrix": [
+          [
+            504,
+            56,
+            4
+          ],
+          [
+            49,
+            372,
+            32
+          ],
+          [
+            5,
+            48,
+            399
+          ]
+        ]
+      },
+      "client_metrics": {
+        "client_2": {
+          "loss": 0.2081,
+          "accuracy": 0.9302,
+          "precision": 0.8855,
+          "recall": 0.7576,
+          "f1": 0.8103,
+          "f1_weighted": 0.9259,
+          "f1_per_class": [
+            0.7293,
+            0.9601,
+            0.7414
+          ],
+          "confusion_matrix": [
+            [
+              97,
+              60,
+              1
+            ],
+            [
+              11,
+              1564,
+              18
+            ],
+            [
+              0,
+              41,
+              86
+            ]
+          ]
+        },
+        "client_3": {
+          "loss": 0.1327,
+          "accuracy": 0.9534,
+          "precision": 0.8394,
+          "recall": 0.803,
+          "f1": 0.8186,
+          "f1_weighted": 0.9511,
+          "f1_per_class": [
+            0.8905,
+            0.5876,
+            0.9777
+          ],
+          "confusion_matrix": [
+            [
+              61,
+              6,
+              1
+            ],
+            [
+              5,
+              57,
+              46
+            ],
+            [
+              3,
+              23,
+              1602
+            ]
+          ]
+        },
+        "client_1": {
+          "loss": 0.1241,
+          "accuracy": 0.9558,
+          "precision": 0.8427,
+          "recall": 0.7305,
+          "f1": 0.7688,
+          "f1_weighted": 0.9495,
+          "f1_per_class": [
+            0.9779,
+            0.4606,
+            0.8679
+          ],
+          "confusion_matrix": [
+            [
+              2012,
+              15,
+              3
+            ],
+            [
+              68,
+              38,
+              3
+            ],
+            [
+              5,
+              3,
+              46
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "round": 11,
+      "reason": "ALL_CLIENTS_RESPONDED",
+      "active_clients": [
+        1,
+        2,
+        3
+      ],
+      "missing_clients": [],
+      "num_active_clients": 3,
+      "weighting_factors": {
+        "client_2": 0.3197,
+        "client_3": 0.3071,
+        "client_1": 0.3733
+      },
+      "client_drift_l2": {
+        "client_2": 0.4832,
+        "client_3": 0.4665,
+        "client_1": 0.4279
+      },
+      "mean_client_drift_l2": 0.4592,
+      "global_metrics": {
+        "loss": 0.346,
+        "accuracy": 0.8686,
+        "precision": 0.8671,
+        "recall": 0.866,
+        "f1": 0.8665,
+        "f1_weighted": 0.8689,
+        "f1_per_class": [
+          0.8983,
+          0.7996,
+          0.9016
+        ],
+        "confusion_matrix": [
+          [
+            508,
+            52,
+            4
+          ],
+          [
+            53,
+            365,
+            35
+          ],
+          [
+            6,
+            43,
+            403
+          ]
+        ]
+      },
+      "client_metrics": {
+        "client_2": {
+          "loss": 0.2044,
+          "accuracy": 0.9313,
+          "precision": 0.8822,
+          "recall": 0.7656,
+          "f1": 0.8149,
+          "f1_weighted": 0.9275,
+          "f1_per_class": [
+            0.7426,
+            0.9606,
+            0.7414
+          ],
+          "confusion_matrix": [
+            [
+              101,
+              56,
+              1
+            ],
+            [
+              13,
+              1562,
+              18
+            ],
+            [
+              0,
+              41,
+              86
+            ]
+          ]
+        },
+        "client_3": {
+          "loss": 0.1297,
+          "accuracy": 0.9562,
+          "precision": 0.861,
+          "recall": 0.7953,
+          "f1": 0.821,
+          "f1_weighted": 0.9526,
+          "f1_per_class": [
+            0.8905,
+            0.5934,
+            0.979
+          ],
+          "confusion_matrix": [
+            [
+              61,
+              5,
+              2
+            ],
+            [
+              5,
+              54,
+              49
+            ],
+            [
+              3,
+              15,
+              1610
+            ]
+          ]
+        },
+        "client_1": {
+          "loss": 0.1222,
+          "accuracy": 0.9576,
+          "precision": 0.8441,
+          "recall": 0.7454,
+          "f1": 0.7835,
+          "f1_weighted": 0.953,
+          "f1_per_class": [
+            0.9791,
+            0.5143,
+            0.8571
+          ],
+          "confusion_matrix": [
+            [
+              2010,
+              17,
+              3
+            ],
+            [
+              61,
+              45,
+              3
+            ],
+            [
+              5,
+              4,
+              45
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "round": 12,
+      "reason": "ALL_CLIENTS_RESPONDED",
+      "active_clients": [
+        1,
+        2,
+        3
+      ],
+      "missing_clients": [],
+      "num_active_clients": 3,
+      "weighting_factors": {
+        "client_3": 0.3071,
+        "client_2": 0.3197,
+        "client_1": 0.3733
+      },
+      "client_drift_l2": {
+        "client_3": 0.451,
+        "client_2": 0.4692,
+        "client_1": 0.4115
+      },
+      "mean_client_drift_l2": 0.4439,
+      "global_metrics": {
+        "loss": 0.3414,
+        "accuracy": 0.8673,
+        "precision": 0.8653,
+        "recall": 0.8651,
+        "f1": 0.8651,
+        "f1_weighted": 0.8676,
+        "f1_per_class": [
+          0.8984,
+          0.7983,
+          0.8988
+        ],
+        "confusion_matrix": [
+          [
+            504,
+            56,
+            4
+          ],
+          [
+            48,
+            366,
+            39
+          ],
+          [
+            6,
+            42,
+            404
+          ]
+        ]
+      },
+      "client_metrics": {
+        "client_3": {
+          "loss": 0.1286,
+          "accuracy": 0.9568,
+          "precision": 0.8649,
+          "recall": 0.8002,
+          "f1": 0.8248,
+          "f1_weighted": 0.9531,
+          "f1_per_class": [
+            0.8986,
+            0.5967,
+            0.979
+          ],
+          "confusion_matrix": [
+            [
+              62,
+              4,
+              2
+            ],
+            [
+              5,
+              54,
+              49
+            ],
+            [
+              3,
+              15,
+              1610
+            ]
+          ]
+        },
+        "client_2": {
+          "loss": 0.2012,
+          "accuracy": 0.9308,
+          "precision": 0.8783,
+          "recall": 0.7684,
+          "f1": 0.8146,
+          "f1_weighted": 0.9271,
+          "f1_per_class": [
+            0.7407,
+            0.9603,
+            0.7426
+          ],
+          "confusion_matrix": [
+            [
+              100,
+              57,
+              1
+            ],
+            [
+              12,
+              1560,
+              21
+            ],
+            [
+              0,
+              39,
+              88
+            ]
+          ]
+        },
+        "client_1": {
+          "loss": 0.1217,
+          "accuracy": 0.9553,
+          "precision": 0.8204,
+          "recall": 0.7593,
+          "f1": 0.7846,
+          "f1_weighted": 0.9519,
+          "f1_per_class": [
+            0.9778,
+            0.5161,
+            0.8598
+          ],
+          "confusion_matrix": [
+            [
+              2001,
+              25,
+              4
+            ],
+            [
+              58,
+              48,
+              3
+            ],
+            [
+              4,
+              4,
+              46
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "round": 13,
+      "reason": "ALL_CLIENTS_RESPONDED",
+      "active_clients": [
+        1,
+        2,
+        3
+      ],
+      "missing_clients": [],
+      "num_active_clients": 3,
+      "weighting_factors": {
+        "client_2": 0.3197,
+        "client_3": 0.3071,
+        "client_1": 0.3733
+      },
+      "client_drift_l2": {
+        "client_2": 0.4804,
+        "client_3": 0.4533,
+        "client_1": 0.4254
+      },
+      "mean_client_drift_l2": 0.453,
+      "global_metrics": {
+        "loss": 0.3392,
+        "accuracy": 0.8673,
+        "precision": 0.8656,
+        "recall": 0.8653,
+        "f1": 0.8654,
+        "f1_weighted": 0.8677,
+        "f1_per_class": [
+          0.8966,
+          0.7987,
+          0.9008
+        ],
+        "confusion_matrix": [
+          [
+            503,
+            57,
+            4
+          ],
+          [
+            49,
+            367,
+            37
+          ],
+          [
+            6,
+            42,
+            404
+          ]
+        ]
+      },
+      "client_metrics": {
+        "client_2": {
+          "loss": 0.2007,
+          "accuracy": 0.9318,
+          "precision": 0.9055,
+          "recall": 0.7512,
+          "f1": 0.8108,
+          "f1_weighted": 0.9267,
+          "f1_per_class": [
+            0.7244,
+            0.9612,
+            0.7468
+          ],
+          "confusion_matrix": [
+            [
+              92,
+              65,
+              1
+            ],
+            [
+              4,
+              1571,
+              18
+            ],
+            [
+              0,
+              40,
+              87
+            ]
+          ]
+        },
+        "client_3": {
+          "loss": 0.1272,
+          "accuracy": 0.9557,
+          "precision": 0.8694,
+          "recall": 0.7922,
+          "f1": 0.8213,
+          "f1_weighted": 0.9517,
+          "f1_per_class": [
+            0.8905,
+            0.5955,
+            0.9778
+          ],
+          "confusion_matrix": [
+            [
+              61,
+              2,
+              5
+            ],
+            [
+              5,
+              53,
+              50
+            ],
+            [
+              3,
+              15,
+              1610
+            ]
+          ]
+        },
+        "client_1": {
+          "loss": 0.1198,
+          "accuracy": 0.958,
+          "precision": 0.8643,
+          "recall": 0.7432,
+          "f1": 0.7826,
+          "f1_weighted": 0.9519,
+          "f1_per_class": [
+            0.9786,
+            0.4908,
+            0.8785
+          ],
+          "confusion_matrix": [
+            [
+              2014,
+              13,
+              3
+            ],
+            [
+              66,
+              40,
+              3
+            ],
+            [
+              6,
+              1,
+              47
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "round": 14,
+      "reason": "ALL_CLIENTS_RESPONDED",
+      "active_clients": [
+        1,
+        2,
+        3
+      ],
+      "missing_clients": [],
+      "num_active_clients": 3,
+      "weighting_factors": {
+        "client_3": 0.3071,
+        "client_2": 0.3197,
+        "client_1": 0.3733
+      },
+      "client_drift_l2": {
+        "client_3": 0.444,
+        "client_2": 0.445,
+        "client_1": 0.4032
+      },
+      "mean_client_drift_l2": 0.4307,
+      "global_metrics": {
+        "loss": 0.3375,
+        "accuracy": 0.87,
+        "precision": 0.8676,
+        "recall": 0.8668,
+        "f1": 0.8671,
+        "f1_weighted": 0.8697,
+        "f1_per_class": [
+          0.9008,
+          0.7982,
+          0.9024
+        ],
+        "confusion_matrix": [
+          [
+            513,
+            47,
+            4
+          ],
+          [
+            56,
+            358,
+            39
+          ],
+          [
+            6,
+            39,
+            407
+          ]
+        ]
+      },
+      "client_metrics": {
+        "client_3": {
+          "loss": 0.1263,
+          "accuracy": 0.9557,
+          "precision": 0.8723,
+          "recall": 0.7941,
+          "f1": 0.8223,
+          "f1_weighted": 0.9514,
+          "f1_per_class": [
+            0.8986,
+            0.5909,
+            0.9775
+          ],
+          "confusion_matrix": [
+            [
+              62,
+              1,
+              5
+            ],
+            [
+              5,
+              52,
+              51
+            ],
+            [
+              3,
+              15,
+              1610
+            ]
+          ]
+        },
+        "client_2": {
+          "loss": 0.1999,
+          "accuracy": 0.9345,
+          "precision": 0.8679,
+          "recall": 0.7999,
+          "f1": 0.8308,
+          "f1_weighted": 0.9324,
+          "f1_per_class": [
+            0.7751,
+            0.9622,
+            0.7552
+          ],
+          "confusion_matrix": [
+            [
+              112,
+              45,
+              1
+            ],
+            [
+              19,
+              1552,
+              22
+            ],
+            [
+              0,
+              36,
+              91
+            ]
+          ]
+        },
+        "client_1": {
+          "loss": 0.1184,
+          "accuracy": 0.9603,
+          "precision": 0.8676,
+          "recall": 0.7613,
+          "f1": 0.8006,
+          "f1_weighted": 0.9556,
+          "f1_per_class": [
+            0.98,
+            0.5349,
+            0.8868
+          ],
+          "confusion_matrix": [
+            [
+              2013,
+              15,
+              2
+            ],
+            [
+              60,
+              46,
+              3
+            ],
+            [
+              5,
+              2,
+              47
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "round": 15,
+      "reason": "ALL_CLIENTS_RESPONDED",
+      "active_clients": [
+        1,
+        2,
+        3
+      ],
+      "missing_clients": [],
+      "num_active_clients": 3,
+      "weighting_factors": {
+        "client_2": 0.3197,
+        "client_3": 0.3071,
+        "client_1": 0.3733
+      },
+      "client_drift_l2": {
+        "client_2": 0.45,
+        "client_3": 0.4433,
+        "client_1": 0.4062
+      },
+      "mean_client_drift_l2": 0.4332,
+      "global_metrics": {
+        "loss": 0.3341,
+        "accuracy": 0.87,
+        "precision": 0.8676,
+        "recall": 0.8673,
+        "f1": 0.8675,
+        "f1_weighted": 0.8699,
+        "f1_per_class": [
+          0.9001,
+          0.8009,
+          0.9014
+        ],
+        "confusion_matrix": [
+          [
+            509,
+            50,
+            5
+          ],
+          [
+            52,
+            362,
+            39
+          ],
+          [
+            6,
+            39,
+            407
+          ]
+        ]
+      },
+      "client_metrics": {
+        "client_2": {
+          "loss": 0.1932,
+          "accuracy": 0.9361,
+          "precision": 0.8857,
+          "recall": 0.7886,
+          "f1": 0.8307,
+          "f1_weighted": 0.9332,
+          "f1_per_class": [
+            0.7726,
+            0.9633,
+            0.7563
+          ],
+          "confusion_matrix": [
+            [
+              107,
+              50,
+              1
+            ],
+            [
+              12,
+              1561,
+              20
+            ],
+            [
+              0,
+              37,
+              90
+            ]
+          ]
+        },
+        "client_3": {
+          "loss": 0.1253,
+          "accuracy": 0.9568,
+          "precision": 0.8864,
+          "recall": 0.7869,
+          "f1": 0.8228,
+          "f1_weighted": 0.9521,
+          "f1_per_class": [
+            0.8971,
+            0.593,
+            0.9782
+          ],
+          "confusion_matrix": [
+            [
+              61,
+              1,
+              6
+            ],
+            [
+              5,
+              51,
+              52
+            ],
+            [
+              2,
+              12,
+              1614
+            ]
+          ]
+        },
+        "client_1": {
+          "loss": 0.1173,
+          "accuracy": 0.9599,
+          "precision": 0.8766,
+          "recall": 0.7525,
+          "f1": 0.7966,
+          "f1_weighted": 0.9544,
+          "f1_per_class": [
+            0.9796,
+            0.515,
+            0.8952
+          ],
+          "confusion_matrix": [
+            [
+              2015,
+              14,
+              1
+            ],
+            [
+              63,
+              43,
+              3
+            ],
+            [
+              6,
+              1,
+              47
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "events": [
+    {
+      "time": "13:37:41",
+      "level": "INFO",
+      "message": "Servidor Federado iniciado (899 parametros MLP). Evaluacion inicial Ronda 0 -> Acc=0.4649, F1=0.3464"
+    },
+    {
+      "time": "13:37:42",
+      "level": "INFO",
+      "message": "Cliente 3 registrado desde 127.0.0.1 con n=1804 muestras locales (Clases: {'0': 68, '1': 108, '2': 1628})."
+    },
+    {
+      "time": "13:37:42",
+      "level": "INFO",
+      "message": "Cliente 1 registrado desde 127.0.0.1 con n=2193 muestras locales (Clases: {'0': 2030, '1': 109, '2': 54})."
+    },
+    {
+      "time": "13:37:42",
+      "level": "INFO",
+      "message": "Cliente 2 registrado desde 127.0.0.1 con n=1878 muestras locales (Clases: {'0': 158, '1': 1593, '2': 127})."
+    },
+    {
+      "time": "13:37:42",
+      "level": "INFO",
+      "message": "--- Iniciando Ronda 1/15 (Timeout de ronda: 2.5s) ---"
+    },
+    {
+      "time": "13:37:43",
+      "level": "INFO",
+      "message": "Ronda 1/15 | Recibidos pesos locales de Cliente 2 (n=1878, Acc local=0.9020, F1 local=0.7060, Loss=0.3041)."
+    },
+    {
+      "time": "13:37:43",
+      "level": "INFO",
+      "message": "Ronda 1/15 | Recibidos pesos locales de Cliente 3 (n=1804, Acc local=0.9324, F1 local=0.6244, Loss=0.1863)."
+    },
+    {
+      "time": "13:37:43",
+      "level": "INFO",
+      "message": "Ronda 1/15 | Recibidos pesos locales de Cliente 1 (n=2193, Acc local=0.9453, F1 local=0.6521, Loss=0.1680)."
+    },
+    {
+      "time": "13:37:43",
+      "level": "SUCCESS",
+      "message": "Ronda 1 Agregada (FedAvg con [1, 2, 3], pesos={'client_2': 0.3197, 'client_3': 0.3071, 'client_1': 0.3733}) -> GLOBAL Test: Acc=0.8012 | Precision=0.7966 | Recall=0.7917 | F1=0.7864 | Loss=0.4986 | Drift L2=0.8064"
+    },
+    {
+      "time": "13:37:43",
+      "level": "INFO",
+      "message": "--- Iniciando Ronda 2/15 (Timeout de ronda: 2.5s) ---"
+    },
+    {
+      "time": "13:37:43",
+      "level": "INFO",
+      "message": "Ronda 2/15 | Recibidos pesos locales de Cliente 2 (n=1878, Acc local=0.9121, F1 local=0.7530, Loss=0.2713)."
+    },
+    {
+      "time": "13:37:43",
+      "level": "INFO",
+      "message": "Ronda 2/15 | Recibidos pesos locales de Cliente 3 (n=1804, Acc local=0.9401, F1 local=0.7128, Loss=0.1628)."
+    },
+    {
+      "time": "13:37:43",
+      "level": "INFO",
+      "message": "Ronda 2/15 | Recibidos pesos locales de Cliente 1 (n=2193, Acc local=0.9471, F1 local=0.6818, Loss=0.1531)."
+    },
+    {
+      "time": "13:37:43",
+      "level": "SUCCESS",
+      "message": "Ronda 2 Agregada (FedAvg con [1, 2, 3], pesos={'client_2': 0.3197, 'client_3': 0.3071, 'client_1': 0.3733}) -> GLOBAL Test: Acc=0.8319 | Precision=0.8271 | Recall=0.8253 | F1=0.8248 | Loss=0.4313 | Drift L2=0.6568"
+    },
+    {
+      "time": "13:37:43",
+      "level": "INFO",
+      "message": "--- Iniciando Ronda 3/15 (Timeout de ronda: 2.5s) ---"
+    },
+    {
+      "time": "13:37:44",
+      "level": "INFO",
+      "message": "Ronda 3/15 | Recibidos pesos locales de Cliente 2 (n=1878, Acc local=0.9132, F1 local=0.7480, Loss=0.2575)."
+    },
+    {
+      "time": "13:37:44",
+      "level": "INFO",
+      "message": "Ronda 3/15 | Recibidos pesos locales de Cliente 3 (n=1804, Acc local=0.9457, F1 local=0.7615, Loss=0.1540)."
+    },
+    {
+      "time": "13:37:44",
+      "level": "INFO",
+      "message": "Ronda 3/15 | Recibidos pesos locales de Cliente 1 (n=2193, Acc local=0.9485, F1 local=0.7087, Loss=0.1454)."
+    },
+    {
+      "time": "13:37:44",
+      "level": "SUCCESS",
+      "message": "Ronda 3 Agregada (FedAvg con [1, 2, 3], pesos={'client_2': 0.3197, 'client_3': 0.3071, 'client_1': 0.3733}) -> GLOBAL Test: Acc=0.8421 | Precision=0.8384 | Recall=0.8374 | F1=0.8379 | Loss=0.4055 | Drift L2=0.6100"
+    },
+    {
+      "time": "13:37:44",
+      "level": "INFO",
+      "message": "--- Iniciando Ronda 4/15 (Timeout de ronda: 2.5s) ---"
+    },
+    {
+      "time": "13:37:44",
+      "level": "INFO",
+      "message": "Ronda 4/15 | Recibidos pesos locales de Cliente 3 (n=1804, Acc local=0.9501, F1 local=0.7851, Loss=0.1486)."
+    },
+    {
+      "time": "13:37:44",
+      "level": "INFO",
+      "message": "Ronda 4/15 | Recibidos pesos locales de Cliente 2 (n=1878, Acc local=0.9207, F1 local=0.7874, Loss=0.2469)."
+    },
+    {
+      "time": "13:37:45",
+      "level": "INFO",
+      "message": "Ronda 4/15 | Recibidos pesos locales de Cliente 1 (n=2193, Acc local=0.9489, F1 local=0.7123, Loss=0.1401)."
+    },
+    {
+      "time": "13:37:45",
+      "level": "SUCCESS",
+      "message": "Ronda 4 Agregada (FedAvg con [1, 2, 3], pesos={'client_3': 0.3071, 'client_2': 0.3197, 'client_1': 0.3733}) -> GLOBAL Test: Acc=0.8482 | Precision=0.8439 | Recall=0.8435 | F1=0.8435 | Loss=0.3900 | Drift L2=0.5664"
+    },
+    {
+      "time": "13:37:45",
+      "level": "INFO",
+      "message": "--- Iniciando Ronda 5/15 (Timeout de ronda: 2.5s) ---"
+    },
+    {
+      "time": "13:37:45",
+      "level": "INFO",
+      "message": "Ronda 5/15 | Recibidos pesos locales de Cliente 3 (n=1804, Acc local=0.9507, F1 local=0.7943, Loss=0.1448)."
+    },
+    {
+      "time": "13:37:45",
+      "level": "INFO",
+      "message": "Ronda 5/15 | Recibidos pesos locales de Cliente 2 (n=1878, Acc local=0.9255, F1 local=0.7915, Loss=0.2360)."
+    },
+    {
+      "time": "13:37:45",
+      "level": "INFO",
+      "message": "Ronda 5/15 | Recibidos pesos locales de Cliente 1 (n=2193, Acc local=0.9508, F1 local=0.7323, Loss=0.1361)."
+    },
+    {
+      "time": "13:37:45",
+      "level": "SUCCESS",
+      "message": "Ronda 5 Agregada (FedAvg con [1, 2, 3], pesos={'client_3': 0.3071, 'client_2': 0.3197, 'client_1': 0.3733}) -> GLOBAL Test: Acc=0.8550 | Precision=0.8522 | Recall=0.8514 | F1=0.8518 | Loss=0.3785 | Drift L2=0.5402"
+    },
+    {
+      "time": "13:37:45",
+      "level": "INFO",
+      "message": "--- Iniciando Ronda 6/15 (Timeout de ronda: 2.5s) ---"
+    },
+    {
+      "time": "13:37:46",
+      "level": "INFO",
+      "message": "Ronda 6/15 | Recibidos pesos locales de Cliente 2 (n=1878, Acc local=0.9239, F1 local=0.7938, Loss=0.2303)."
+    },
+    {
+      "time": "13:37:46",
+      "level": "INFO",
+      "message": "Ronda 6/15 | Recibidos pesos locales de Cliente 3 (n=1804, Acc local=0.9507, F1 local=0.7940, Loss=0.1412)."
+    },
+    {
+      "time": "13:37:46",
+      "level": "INFO",
+      "message": "Ronda 6/15 | Recibidos pesos locales de Cliente 1 (n=2193, Acc local=0.9521, F1 local=0.7269, Loss=0.1336)."
+    },
+    {
+      "time": "13:37:46",
+      "level": "SUCCESS",
+      "message": "Ronda 6 Agregada (FedAvg con [1, 2, 3], pesos={'client_2': 0.3197, 'client_3': 0.3071, 'client_1': 0.3733}) -> GLOBAL Test: Acc=0.8604 | Precision=0.8574 | Recall=0.8560 | F1=0.8566 | Loss=0.3715 | Drift L2=0.5304"
+    },
+    {
+      "time": "13:37:46",
+      "level": "INFO",
+      "message": "--- Iniciando Ronda 7/15 (Timeout de ronda: 2.5s) ---"
+    },
+    {
+      "time": "13:37:46",
+      "level": "INFO",
+      "message": "Ronda 7/15 | Recibidos pesos locales de Cliente 3 (n=1804, Acc local=0.9523, F1 local=0.7997, Loss=0.1379)."
+    },
+    {
+      "time": "13:37:46",
+      "level": "INFO",
+      "message": "Ronda 7/15 | Recibidos pesos locales de Cliente 2 (n=1878, Acc local=0.9281, F1 local=0.8080, Loss=0.2222)."
+    },
+    {
+      "time": "13:37:46",
+      "level": "INFO",
+      "message": "Ronda 7/15 | Recibidos pesos locales de Cliente 1 (n=2193, Acc local=0.9526, F1 local=0.7427, Loss=0.1300)."
+    },
+    {
+      "time": "13:37:46",
+      "level": "SUCCESS",
+      "message": "Ronda 7 Agregada (FedAvg con [1, 2, 3], pesos={'client_3': 0.3071, 'client_2': 0.3197, 'client_1': 0.3733}) -> GLOBAL Test: Acc=0.8639 | Precision=0.8613 | Recall=0.8603 | F1=0.8607 | Loss=0.3635 | Drift L2=0.5077"
+    },
+    {
+      "time": "13:37:47",
+      "level": "INFO",
+      "message": "--- Iniciando Ronda 8/15 (Timeout de ronda: 2.5s) ---"
+    },
+    {
+      "time": "13:37:47",
+      "level": "INFO",
+      "message": "Ronda 8/15 | Recibidos pesos locales de Cliente 3 (n=1804, Acc local=0.9529, F1 local=0.8161, Loss=0.1361)."
+    },
+    {
+      "time": "13:37:47",
+      "level": "INFO",
+      "message": "Ronda 8/15 | Recibidos pesos locales de Cliente 2 (n=1878, Acc local=0.9239, F1 local=0.7793, Loss=0.2220)."
+    },
+    {
+      "time": "13:37:47",
+      "level": "INFO",
+      "message": "Ronda 8/15 | Recibidos pesos locales de Cliente 1 (n=2193, Acc local=0.9535, F1 local=0.7482, Loss=0.1276)."
+    },
+    {
+      "time": "13:37:47",
+      "level": "SUCCESS",
+      "message": "Ronda 8 Agregada (FedAvg con [1, 2, 3], pesos={'client_3': 0.3071, 'client_2': 0.3197, 'client_1': 0.3733}) -> GLOBAL Test: Acc=0.8652 | Precision=0.8649 | Recall=0.8630 | F1=0.8635 | Loss=0.3582 | Drift L2=0.4927"
+    },
+    {
+      "time": "13:37:47",
+      "level": "INFO",
+      "message": "--- Iniciando Ronda 9/15 (Timeout de ronda: 2.5s) ---"
+    },
+    {
+      "time": "13:37:47",
+      "level": "INFO",
+      "message": "Ronda 9/15 | Recibidos pesos locales de Cliente 2 (n=1878, Acc local=0.9281, F1 local=0.8081, Loss=0.2120)."
+    },
+    {
+      "time": "13:37:47",
+      "level": "INFO",
+      "message": "Ronda 9/15 | Recibidos pesos locales de Cliente 3 (n=1804, Acc local=0.9557, F1 local=0.8222, Loss=0.1333)."
+    },
+    {
+      "time": "13:37:48",
+      "level": "INFO",
+      "message": "Ronda 9/15 | Recibidos pesos locales de Cliente 1 (n=2193, Acc local=0.9553, F1 local=0.7638, Loss=0.1255)."
+    },
+    {
+      "time": "13:37:48",
+      "level": "SUCCESS",
+      "message": "Ronda 9 Agregada (FedAvg con [1, 2, 3], pesos={'client_2': 0.3197, 'client_3': 0.3071, 'client_1': 0.3733}) -> GLOBAL Test: Acc=0.8686 | Precision=0.8662 | Recall=0.8659 | F1=0.8660 | Loss=0.3527 | Drift L2=0.4763"
+    },
+    {
+      "time": "13:37:48",
+      "level": "INFO",
+      "message": "--- Iniciando Ronda 10/15 (Timeout de ronda: 2.5s) ---"
+    },
+    {
+      "time": "13:37:48",
+      "level": "INFO",
+      "message": "Ronda 10/15 | Recibidos pesos locales de Cliente 2 (n=1878, Acc local=0.9302, F1 local=0.8103, Loss=0.2081)."
+    },
+    {
+      "time": "13:37:48",
+      "level": "INFO",
+      "message": "Ronda 10/15 | Recibidos pesos locales de Cliente 3 (n=1804, Acc local=0.9534, F1 local=0.8186, Loss=0.1327)."
+    },
+    {
+      "time": "13:37:48",
+      "level": "INFO",
+      "message": "Ronda 10/15 | Recibidos pesos locales de Cliente 1 (n=2193, Acc local=0.9558, F1 local=0.7688, Loss=0.1241)."
+    },
+    {
+      "time": "13:37:48",
+      "level": "SUCCESS",
+      "message": "Ronda 10 Agregada (FedAvg con [1, 2, 3], pesos={'client_2': 0.3197, 'client_3': 0.3071, 'client_1': 0.3733}) -> GLOBAL Test: Acc=0.8679 | Precision=0.8673 | Recall=0.8659 | F1=0.8663 | Loss=0.3495 | Drift L2=0.4644"
+    },
+    {
+      "time": "13:37:48",
+      "level": "INFO",
+      "message": "--- Iniciando Ronda 11/15 (Timeout de ronda: 2.5s) ---"
+    },
+    {
+      "time": "13:37:49",
+      "level": "INFO",
+      "message": "Ronda 11/15 | Recibidos pesos locales de Cliente 2 (n=1878, Acc local=0.9313, F1 local=0.8149, Loss=0.2044)."
+    },
+    {
+      "time": "13:37:49",
+      "level": "INFO",
+      "message": "Ronda 11/15 | Recibidos pesos locales de Cliente 3 (n=1804, Acc local=0.9562, F1 local=0.8210, Loss=0.1297)."
+    },
+    {
+      "time": "13:37:49",
+      "level": "INFO",
+      "message": "Ronda 11/15 | Recibidos pesos locales de Cliente 1 (n=2193, Acc local=0.9576, F1 local=0.7835, Loss=0.1222)."
+    },
+    {
+      "time": "13:37:49",
+      "level": "SUCCESS",
+      "message": "Ronda 11 Agregada (FedAvg con [1, 2, 3], pesos={'client_2': 0.3197, 'client_3': 0.3071, 'client_1': 0.3733}) -> GLOBAL Test: Acc=0.8686 | Precision=0.8671 | Recall=0.8660 | F1=0.8665 | Loss=0.3460 | Drift L2=0.4592"
+    },
+    {
+      "time": "13:37:49",
+      "level": "INFO",
+      "message": "--- Iniciando Ronda 12/15 (Timeout de ronda: 2.5s) ---"
+    },
+    {
+      "time": "13:37:49",
+      "level": "INFO",
+      "message": "Ronda 12/15 | Recibidos pesos locales de Cliente 3 (n=1804, Acc local=0.9568, F1 local=0.8248, Loss=0.1286)."
+    },
+    {
+      "time": "13:37:49",
+      "level": "INFO",
+      "message": "Ronda 12/15 | Recibidos pesos locales de Cliente 2 (n=1878, Acc local=0.9308, F1 local=0.8146, Loss=0.2012)."
+    },
+    {
+      "time": "13:37:50",
+      "level": "INFO",
+      "message": "Ronda 12/15 | Recibidos pesos locales de Cliente 1 (n=2193, Acc local=0.9553, F1 local=0.7846, Loss=0.1217)."
+    },
+    {
+      "time": "13:37:50",
+      "level": "SUCCESS",
+      "message": "Ronda 12 Agregada (FedAvg con [1, 2, 3], pesos={'client_3': 0.3071, 'client_2': 0.3197, 'client_1': 0.3733}) -> GLOBAL Test: Acc=0.8673 | Precision=0.8653 | Recall=0.8651 | F1=0.8651 | Loss=0.3414 | Drift L2=0.4439"
+    },
+    {
+      "time": "13:37:50",
+      "level": "INFO",
+      "message": "--- Iniciando Ronda 13/15 (Timeout de ronda: 2.5s) ---"
+    },
+    {
+      "time": "13:37:50",
+      "level": "INFO",
+      "message": "Ronda 13/15 | Recibidos pesos locales de Cliente 2 (n=1878, Acc local=0.9318, F1 local=0.8108, Loss=0.2007)."
+    },
+    {
+      "time": "13:37:50",
+      "level": "INFO",
+      "message": "Ronda 13/15 | Recibidos pesos locales de Cliente 3 (n=1804, Acc local=0.9557, F1 local=0.8213, Loss=0.1272)."
+    },
+    {
+      "time": "13:37:50",
+      "level": "INFO",
+      "message": "Ronda 13/15 | Recibidos pesos locales de Cliente 1 (n=2193, Acc local=0.9580, F1 local=0.7826, Loss=0.1198)."
+    },
+    {
+      "time": "13:37:50",
+      "level": "SUCCESS",
+      "message": "Ronda 13 Agregada (FedAvg con [1, 2, 3], pesos={'client_2': 0.3197, 'client_3': 0.3071, 'client_1': 0.3733}) -> GLOBAL Test: Acc=0.8673 | Precision=0.8656 | Recall=0.8653 | F1=0.8654 | Loss=0.3392 | Drift L2=0.4530"
+    },
+    {
+      "time": "13:37:51",
+      "level": "INFO",
+      "message": "--- Iniciando Ronda 14/15 (Timeout de ronda: 2.5s) ---"
+    },
+    {
+      "time": "13:37:51",
+      "level": "INFO",
+      "message": "Ronda 14/15 | Recibidos pesos locales de Cliente 3 (n=1804, Acc local=0.9557, F1 local=0.8223, Loss=0.1263)."
+    },
+    {
+      "time": "13:37:51",
+      "level": "INFO",
+      "message": "Ronda 14/15 | Recibidos pesos locales de Cliente 2 (n=1878, Acc local=0.9345, F1 local=0.8308, Loss=0.1999)."
+    },
+    {
+      "time": "13:37:51",
+      "level": "INFO",
+      "message": "Ronda 14/15 | Recibidos pesos locales de Cliente 1 (n=2193, Acc local=0.9603, F1 local=0.8006, Loss=0.1184)."
+    },
+    {
+      "time": "13:37:51",
+      "level": "SUCCESS",
+      "message": "Ronda 14 Agregada (FedAvg con [1, 2, 3], pesos={'client_3': 0.3071, 'client_2': 0.3197, 'client_1': 0.3733}) -> GLOBAL Test: Acc=0.8700 | Precision=0.8676 | Recall=0.8668 | F1=0.8671 | Loss=0.3375 | Drift L2=0.4307"
+    },
+    {
+      "time": "13:37:51",
+      "level": "INFO",
+      "message": "--- Iniciando Ronda 15/15 (Timeout de ronda: 2.5s) ---"
+    },
+    {
+      "time": "13:37:51",
+      "level": "INFO",
+      "message": "Ronda 15/15 | Recibidos pesos locales de Cliente 2 (n=1878, Acc local=0.9361, F1 local=0.8307, Loss=0.1932)."
+    },
+    {
+      "time": "13:37:51",
+      "level": "INFO",
+      "message": "Ronda 15/15 | Recibidos pesos locales de Cliente 3 (n=1804, Acc local=0.9568, F1 local=0.8228, Loss=0.1253)."
+    },
+    {
+      "time": "13:37:52",
+      "level": "INFO",
+      "message": "Ronda 15/15 | Recibidos pesos locales de Cliente 1 (n=2193, Acc local=0.9599, F1 local=0.7966, Loss=0.1173)."
+    },
+    {
+      "time": "13:37:52",
+      "level": "SUCCESS",
+      "message": "Ronda 15 Agregada (FedAvg con [1, 2, 3], pesos={'client_2': 0.3197, 'client_3': 0.3071, 'client_1': 0.3733}) -> GLOBAL Test: Acc=0.8700 | Precision=0.8676 | Recall=0.8673 | F1=0.8675 | Loss=0.3341 | Drift L2=0.4332"
+    },
+    {
+      "time": "13:37:52",
+      "level": "SUCCESS",
+      "message": "Entrenamiento Federado completado (15 rondas)."
+    }
+  ]
+}

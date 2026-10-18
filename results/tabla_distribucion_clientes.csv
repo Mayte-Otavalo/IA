@@ -1,0 +1,7 @@
+Escenario,Cliente,Total Muestras,Clase 0 (Bajo),% Bajo,Clase 1 (Medio),% Medio,Clase 2 (Alto),% Alto,Media CO(GT),Media Temp (T)
+IID,Cliente 1,1958,752,38.41,603,30.8,603,30.8,2.13,0.02
+IID,Cliente 2,1958,752,38.41,603,30.8,603,30.8,2.14,0.02
+IID,Cliente 3,1959,752,38.39,604,30.83,603,30.78,2.1,-0.04
+non-IID,Cliente 1,2193,2030,92.57,109,4.97,54,2.46,1.02,-0.13
+non-IID,Cliente 2,1878,158,8.41,1593,84.82,127,6.76,1.99,0.16
+non-IID,Cliente 3,1804,68,3.77,108,5.99,1628,90.24,3.61,-0.01

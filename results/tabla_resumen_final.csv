@@ -1,0 +1,9 @@
+Criterio / Metrica,Escenario IID,Escenario non-IID,Diferencia (IID vs non-IID)
+Accuracy Final (Ronda 15),88.36%,87.00%,+1.36 pp
+Precision Macro Final (Ronda 15),88.07%,86.76%,+1.31 pp
+Recall Macro Final (Ronda 15),88.22%,86.73%,+1.49 pp
+F1-Score Macro Final (Ronda 15),88.14%,86.75%,+1.39 pp
+Loss Global Final (Cross-Entropy),0.3142,0.3341,-0.0199
+Divergencia Media de Pesos (Client Drift L2),0.2422,0.5248,2.17x mayor en non-IID
+Ronda de Convergencia (Acc >= 85%),Ronda 2,Ronda 5,Convergencia mas rapida en IID
+Oscilacion / Inestabilidad entre Rondas (Std Delta F1),0.00484,0.00186,Mayor estabilidad en IID
