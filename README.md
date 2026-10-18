@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Examen Práctico: Aprendizaje Federado IID vs. non-IID (Air Quality Dataset)
 
 Sistema distribuido de **Aprendizaje Federado (`FedAvg`)** implementado sobre una arquitectura Cliente-Servidor HTTP/REST en red local para 4 computadoras, utilizando el dataset **[Air Quality Data Set (UCI / Kaggle)](https://www.kaggle.com/datasets/fedesoriano/air-quality-data-set/data)**.
@@ -142,3 +143,7 @@ Esto genera en `results/`:
 - `results/prueba_desconexion_recuperacion.png`
 - `results/tabla_comparativa_rondas.csv` y `results/tabla_resumen_final.csv`
 - `Experimento_Federado_IID_vs_NonIID.ipynb` (Notebook completo con análisis y conclusiones)
+=======
+# IA
+Solving problems with artificial intelligence
+>>>>>>> 69692a652dc9f03eb50cedb6d470c3dd166a33e6
