@@ -1,0 +1,790 @@
+{
+  "baseline_comparison": [
+    {
+      "Model": "Logistic Regression",
+      "CV_F1": 0.5938,
+      "CV_ROC_AUC": 0.8462,
+      "CV_Recall": 0.5445,
+      "Test_Accuracy": 0.8062,
+      "Test_Precision": 0.6593,
+      "Test_Recall": 0.5588,
+      "Test_F1": 0.6049,
+      "Test_ROC_AUC": 0.8422,
+      "Train_Time_s": 1.41
+    },
+    {
+      "Model": "Random Forest",
+      "CV_F1": 0.546,
+      "CV_ROC_AUC": 0.8237,
+      "CV_Recall": 0.4776,
+      "Test_Accuracy": 0.7921,
+      "Test_Precision": 0.6421,
+      "Test_Recall": 0.4893,
+      "Test_F1": 0.5554,
+      "Test_ROC_AUC": 0.8275,
+      "Train_Time_s": 7.36
+    },
+    {
+      "Model": "XGBoost",
+      "CV_F1": 0.559,
+      "CV_ROC_AUC": 0.8258,
+      "CV_Recall": 0.507,
+      "Test_Accuracy": 0.7764,
+      "Test_Precision": 0.5891,
+      "Test_Recall": 0.5214,
+      "Test_F1": 0.5532,
+      "Test_ROC_AUC": 0.8183,
+      "Train_Time_s": 4.25
+    }
+  ],
+  "optim_comparison": [
+    {
+      "Strategy": "Grid Search",
+      "Best_CV_F1": 0.6367,
+      "Test_F1": 0.6288,
+      "Test_ROC_AUC": 0.8424,
+      "Test_Recall": 0.7834,
+      "Evaluated_Configs": 54,
+      "Time_Seconds": 30.08,
+      "Best_Params": "{'classifier__class_weight': 'balanced', 'classifier__max_depth': 10, 'classifier__min_samples_split': 10, 'classifier__n_estimators': 100}"
+    },
+    {
+      "Strategy": "Random Search",
+      "Best_CV_F1": 0.6367,
+      "Test_F1": 0.6288,
+      "Test_ROC_AUC": 0.8424,
+      "Test_Recall": 0.7834,
+      "Evaluated_Configs": 25,
+      "Time_Seconds": 13.85,
+      "Best_Params": "{'classifier__n_estimators': 100, 'classifier__min_samples_split': 10, 'classifier__max_depth': 10, 'classifier__class_weight': 'balanced'}"
+    },
+    {
+      "Strategy": "Bayesian (Optuna TPE)",
+      "Best_CV_F1": 0.6388,
+      "Test_F1": 0.6289,
+      "Test_ROC_AUC": 0.8412,
+      "Test_Recall": 0.7861,
+      "Evaluated_Configs": 25,
+      "Time_Seconds": 52.97,
+      "Best_Params": "{'n_estimators': 75, 'max_depth': 9, 'min_samples_split': 6, 'class_weight': 'balanced'}"
+    },
+    {
+      "Strategy": "Multi-Objective (NSGA-II)",
+      "Best_CV_F1": 0.6348,
+      "Test_F1": 0.6194,
+      "Test_ROC_AUC": 0.8373,
+      "Test_Recall": 0.7353,
+      "Evaluated_Configs": 35,
+      "Time_Seconds": 98.29,
+      "Best_Params": "{'n_estimators': 120, 'max_depth': 13, 'min_samples_split': 7, 'class_weight': 'balanced'}"
+    }
+  ],
+  "pareto_data": [
+    {
+      "trial_number": 0,
+      "f1_cv": 0.6253,
+      "latency_ms_1k": 26.334,
+      "n_estimators": 120,
+      "max_depth": 18,
+      "min_samples_split": 8,
+      "class_weight": "balanced",
+      "is_pareto": false
+    },
+    {
+      "trial_number": 1,
+      "f1_cv": 0.4851,
+      "latency_ms_1k": 7.483,
+      "n_estimators": 60,
+      "max_depth": 4,
+      "min_samples_split": 9,
+      "class_weight": null,
+      "is_pareto": true
+    },
+    {
+      "trial_number": 2,
+      "f1_cv": 0.6247,
+      "latency_ms_1k": 8.433,
+      "n_estimators": 40,
+      "max_depth": 18,
+      "min_samples_split": 9,
+      "class_weight": "balanced",
+      "is_pareto": true
+    },
+    {
+      "trial_number": 3,
+      "f1_cv": 0.6319,
+      "latency_ms_1k": 13.592,
+      "n_estimators": 80,
+      "max_depth": 8,
+      "min_samples_split": 6,
+      "class_weight": "balanced",
+      "is_pareto": false
+    },
+    {
+      "trial_number": 4,
+      "f1_cv": 0.54,
+      "latency_ms_1k": 22.474,
+      "n_estimators": 160,
+      "max_depth": 6,
+      "min_samples_split": 4,
+      "class_weight": null,
+      "is_pareto": false
+    },
+    {
+      "trial_number": 5,
+      "f1_cv": 0.6292,
+      "latency_ms_1k": 28.885,
+      "n_estimators": 200,
+      "max_depth": 6,
+      "min_samples_split": 6,
+      "class_weight": "balanced",
+      "is_pareto": false
+    },
+    {
+      "trial_number": 6,
+      "f1_cv": 0.5431,
+      "latency_ms_1k": 22.732,
+      "n_estimators": 160,
+      "max_depth": 6,
+      "min_samples_split": 2,
+      "class_weight": null,
+      "is_pareto": false
+    },
+    {
+      "trial_number": 7,
+      "f1_cv": 0.6315,
+      "latency_ms_1k": 34.048,
+      "n_estimators": 200,
+      "max_depth": 8,
+      "min_samples_split": 2,
+      "class_weight": "balanced",
+      "is_pareto": false
+    },
+    {
+      "trial_number": 8,
+      "f1_cv": 0.6343,
+      "latency_ms_1k": 12.567,
+      "n_estimators": 60,
+      "max_depth": 11,
+      "min_samples_split": 2,
+      "class_weight": "balanced",
+      "is_pareto": true
+    },
+    {
+      "trial_number": 9,
+      "f1_cv": 0.6316,
+      "latency_ms_1k": 30.087,
+      "n_estimators": 180,
+      "max_depth": 8,
+      "min_samples_split": 6,
+      "class_weight": "balanced",
+      "is_pareto": false
+    },
+    {
+      "trial_number": 10,
+      "f1_cv": 0.6334,
+      "latency_ms_1k": 49.306,
+      "n_estimators": 240,
+      "max_depth": 15,
+      "min_samples_split": 10,
+      "class_weight": "balanced",
+      "is_pareto": false
+    },
+    {
+      "trial_number": 11,
+      "f1_cv": 0.5182,
+      "latency_ms_1k": 32.482,
+      "n_estimators": 240,
+      "max_depth": 5,
+      "min_samples_split": 3,
+      "class_weight": null,
+      "is_pareto": false
+    },
+    {
+      "trial_number": 12,
+      "f1_cv": 0.6344,
+      "latency_ms_1k": 20.226,
+      "n_estimators": 120,
+      "max_depth": 8,
+      "min_samples_split": 9,
+      "class_weight": "balanced",
+      "is_pareto": true
+    },
+    {
+      "trial_number": 13,
+      "f1_cv": 0.5391,
+      "latency_ms_1k": 20.002,
+      "n_estimators": 140,
+      "max_depth": 6,
+      "min_samples_split": 9,
+      "class_weight": null,
+      "is_pareto": false
+    },
+    {
+      "trial_number": 14,
+      "f1_cv": 0.6295,
+      "latency_ms_1k": 28.112,
+      "n_estimators": 200,
+      "max_depth": 6,
+      "min_samples_split": 2,
+      "class_weight": "balanced",
+      "is_pareto": false
+    },
+    {
+      "trial_number": 15,
+      "f1_cv": 0.6182,
+      "latency_ms_1k": 47.429,
+      "n_estimators": 200,
+      "max_depth": 15,
+      "min_samples_split": 2,
+      "class_weight": "balanced",
+      "is_pareto": false
+    },
+    {
+      "trial_number": 16,
+      "f1_cv": 0.572,
+      "latency_ms_1k": 46.341,
+      "n_estimators": 220,
+      "max_depth": 13,
+      "min_samples_split": 4,
+      "class_weight": null,
+      "is_pareto": false
+    },
+    {
+      "trial_number": 17,
+      "f1_cv": 0.6347,
+      "latency_ms_1k": 20.973,
+      "n_estimators": 100,
+      "max_depth": 14,
+      "min_samples_split": 7,
+      "class_weight": "balanced",
+      "is_pareto": true
+    },
+    {
+      "trial_number": 18,
+      "f1_cv": 0.5734,
+      "latency_ms_1k": 12.369,
+      "n_estimators": 60,
+      "max_depth": 14,
+      "min_samples_split": 8,
+      "class_weight": null,
+      "is_pareto": false
+    },
+    {
+      "trial_number": 19,
+      "f1_cv": 0.5706,
+      "latency_ms_1k": 27.75,
+      "n_estimators": 140,
+      "max_depth": 11,
+      "min_samples_split": 5,
+      "class_weight": null,
+      "is_pareto": false
+    },
+    {
+      "trial_number": 20,
+      "f1_cv": 0.5686,
+      "latency_ms_1k": 8.762,
+      "n_estimators": 40,
+      "max_depth": 13,
+      "min_samples_split": 4,
+      "class_weight": null,
+      "is_pareto": false
+    },
+    {
+      "trial_number": 21,
+      "f1_cv": 0.6342,
+      "latency_ms_1k": 14.471,
+      "n_estimators": 80,
+      "max_depth": 10,
+      "min_samples_split": 8,
+      "class_weight": "balanced",
+      "is_pareto": false
+    },
+    {
+      "trial_number": 22,
+      "f1_cv": 0.6336,
+      "latency_ms_1k": 15.018,
+      "n_estimators": 100,
+      "max_depth": 6,
+      "min_samples_split": 10,
+      "class_weight": "balanced",
+      "is_pareto": false
+    },
+    {
+      "trial_number": 23,
+      "f1_cv": 0.6211,
+      "latency_ms_1k": 50.257,
+      "n_estimators": 220,
+      "max_depth": 16,
+      "min_samples_split": 3,
+      "class_weight": "balanced",
+      "is_pareto": false
+    },
+    {
+      "trial_number": 24,
+      "f1_cv": 0.5685,
+      "latency_ms_1k": 45.373,
+      "n_estimators": 200,
+      "max_depth": 17,
+      "min_samples_split": 4,
+      "class_weight": null,
+      "is_pareto": false
+    },
+    {
+      "trial_number": 25,
+      "f1_cv": 0.5667,
+      "latency_ms_1k": 27.706,
+      "n_estimators": 120,
+      "max_depth": 16,
+      "min_samples_split": 9,
+      "class_weight": null,
+      "is_pareto": false
+    },
+    {
+      "trial_number": 26,
+      "f1_cv": 0.5586,
+      "latency_ms_1k": 19.394,
+      "n_estimators": 120,
+      "max_depth": 7,
+      "min_samples_split": 3,
+      "class_weight": null,
+      "is_pareto": false
+    },
+    {
+      "trial_number": 27,
+      "f1_cv": 0.5769,
+      "latency_ms_1k": 19.958,
+      "n_estimators": 100,
+      "max_depth": 11,
+      "min_samples_split": 8,
+      "class_weight": null,
+      "is_pareto": false
+    },
+    {
+      "trial_number": 28,
+      "f1_cv": 0.6301,
+      "latency_ms_1k": 37.282,
+      "n_estimators": 240,
+      "max_depth": 7,
+      "min_samples_split": 6,
+      "class_weight": "balanced",
+      "is_pareto": false
+    },
+    {
+      "trial_number": 29,
+      "f1_cv": 0.5654,
+      "latency_ms_1k": 8.804,
+      "n_estimators": 40,
+      "max_depth": 13,
+      "min_samples_split": 6,
+      "class_weight": null,
+      "is_pareto": false
+    },
+    {
+      "trial_number": 30,
+      "f1_cv": 0.558,
+      "latency_ms_1k": 34.163,
+      "n_estimators": 220,
+      "max_depth": 7,
+      "min_samples_split": 3,
+      "class_weight": null,
+      "is_pareto": false
+    },
+    {
+      "trial_number": 31,
+      "f1_cv": 0.5786,
+      "latency_ms_1k": 16.419,
+      "n_estimators": 80,
+      "max_depth": 14,
+      "min_samples_split": 8,
+      "class_weight": null,
+      "is_pareto": false
+    },
+    {
+      "trial_number": 32,
+      "f1_cv": 0.6348,
+      "latency_ms_1k": 24.951,
+      "n_estimators": 120,
+      "max_depth": 13,
+      "min_samples_split": 7,
+      "class_weight": "balanced",
+      "is_pareto": true
+    },
+    {
+      "trial_number": 33,
+      "f1_cv": 0.5629,
+      "latency_ms_1k": 36.765,
+      "n_estimators": 220,
+      "max_depth": 8,
+      "min_samples_split": 3,
+      "class_weight": null,
+      "is_pareto": false
+    },
+    {
+      "trial_number": 34,
+      "f1_cv": 0.4849,
+      "latency_ms_1k": 22.387,
+      "n_estimators": 180,
+      "max_depth": 4,
+      "min_samples_split": 6,
+      "class_weight": null,
+      "is_pareto": false
+    }
+  ],
+  "feature_names": [
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges",
+    "gender_Male",
+    "SeniorCitizen_1",
+    "Partner_Yes",
+    "Dependents_Yes",
+    "PhoneService_Yes",
+    "MultipleLines_No phone service",
+    "MultipleLines_Yes",
+    "InternetService_Fiber optic",
+    "InternetService_No",
+    "OnlineSecurity_No internet service",
+    "OnlineSecurity_Yes",
+    "OnlineBackup_No internet service",
+    "OnlineBackup_Yes",
+    "DeviceProtection_No internet service",
+    "DeviceProtection_Yes",
+    "TechSupport_No internet service",
+    "TechSupport_Yes",
+    "StreamingTV_No internet service",
+    "StreamingTV_Yes",
+    "StreamingMovies_No internet service",
+    "StreamingMovies_Yes",
+    "Contract_One year",
+    "Contract_Two year",
+    "PaperlessBilling_Yes",
+    "PaymentMethod_Credit card (automatic)",
+    "PaymentMethod_Electronic check",
+    "PaymentMethod_Mailed check"
+  ],
+  "num_cols": [
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "cat_cols": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod"
+  ],
+  "feature_importance": [
+    {
+      "Feature": "tenure",
+      "SHAP_Importance": 0.07573534834533092,
+      "RF_MDI_Importance": 0.1846301500340203
+    },
+    {
+      "Feature": "InternetService_Fiber optic",
+      "SHAP_Importance": 0.06548383994489072,
+      "RF_MDI_Importance": 0.08665467616987711
+    },
+    {
+      "Feature": "Contract_Two year",
+      "SHAP_Importance": 0.06287150485880884,
+      "RF_MDI_Importance": 0.1154262107195676
+    },
+    {
+      "Feature": "TotalCharges",
+      "SHAP_Importance": 0.036848306754712616,
+      "RF_MDI_Importance": 0.12995970896869483
+    },
+    {
+      "Feature": "PaymentMethod_Electronic check",
+      "SHAP_Importance": 0.033787211154424145,
+      "RF_MDI_Importance": 0.05676760580214537
+    },
+    {
+      "Feature": "Contract_One year",
+      "SHAP_Importance": 0.03022709206538048,
+      "RF_MDI_Importance": 0.04182990911744569
+    },
+    {
+      "Feature": "MonthlyCharges",
+      "SHAP_Importance": 0.02881688192684689,
+      "RF_MDI_Importance": 0.09378314642247731
+    },
+    {
+      "Feature": "OnlineSecurity_Yes",
+      "SHAP_Importance": 0.023432514515582994,
+      "RF_MDI_Importance": 0.035304730447320236
+    },
+    {
+      "Feature": "TechSupport_Yes",
+      "SHAP_Importance": 0.017877087263353283,
+      "RF_MDI_Importance": 0.023796075385440017
+    },
+    {
+      "Feature": "PaperlessBilling_Yes",
+      "SHAP_Importance": 0.014417576758869085,
+      "RF_MDI_Importance": 0.016325417277255474
+    },
+    {
+      "Feature": "DeviceProtection_No internet service",
+      "SHAP_Importance": 0.012848542185372507,
+      "RF_MDI_Importance": 0.020044398784610833
+    },
+    {
+      "Feature": "OnlineBackup_No internet service",
+      "SHAP_Importance": 0.012588133934485188,
+      "RF_MDI_Importance": 0.01973653508502847
+    },
+    {
+      "Feature": "TechSupport_No internet service",
+      "SHAP_Importance": 0.011284063568835757,
+      "RF_MDI_Importance": 0.017936927375688357
+    },
+    {
+      "Feature": "OnlineSecurity_No internet service",
+      "SHAP_Importance": 0.0105310285940543,
+      "RF_MDI_Importance": 0.01659118455484575
+    },
+    {
+      "Feature": "StreamingTV_No internet service",
+      "SHAP_Importance": 0.009355612255813118,
+      "RF_MDI_Importance": 0.014674965364966604
+    },
+    {
+      "Feature": "OnlineBackup_Yes",
+      "SHAP_Importance": 0.008644819693313434,
+      "RF_MDI_Importance": 0.015139971862671471
+    },
+    {
+      "Feature": "StreamingMovies_Yes",
+      "SHAP_Importance": 0.0067759891488813895,
+      "RF_MDI_Importance": 0.009202351714440903
+    },
+    {
+      "Feature": "StreamingMovies_No internet service",
+      "SHAP_Importance": 0.0064170795508225985,
+      "RF_MDI_Importance": 0.00888842201213725
+    },
+    {
+      "Feature": "StreamingTV_Yes",
+      "SHAP_Importance": 0.006160746067119265,
+      "RF_MDI_Importance": 0.008665932778674421
+    },
+    {
+      "Feature": "Dependents_Yes",
+      "SHAP_Importance": 0.006120571401880029,
+      "RF_MDI_Importance": 0.010693261951745992
+    }
+  ],
+  "idx_high_risk": 1109,
+  "idx_low_risk": 1059,
+  "sample_high_risk": {
+    "features": {
+      "gender": "Female",
+      "SeniorCitizen": 1,
+      "Partner": "No",
+      "Dependents": "No",
+      "tenure": 1,
+      "PhoneService": "Yes",
+      "MultipleLines": "Yes",
+      "InternetService": "Fiber optic",
+      "OnlineSecurity": "No",
+      "OnlineBackup": "No",
+      "DeviceProtection": "No",
+      "TechSupport": "No",
+      "StreamingTV": "No",
+      "StreamingMovies": "Yes",
+      "Contract": "Month-to-month",
+      "PaperlessBilling": "Yes",
+      "PaymentMethod": "Electronic check",
+      "MonthlyCharges": 85.05,
+      "TotalCharges": 85.05
+    },
+    "prob_churn": 0.9405538771280305,
+    "lime_rules": [
+      [
+        "Contract_Two year <= 0.00",
+        0.16147464944518078
+      ],
+      [
+        "tenure <= -0.96",
+        0.13272986003105308
+      ],
+      [
+        "0.00 < InternetService_Fiber optic <= 1.00",
+        0.11129202758179293
+      ],
+      [
+        "Contract_One year <= 0.00",
+        0.08416798979061257
+      ],
+      [
+        "TotalCharges <= -0.83",
+        0.06358618762947985
+      ],
+      [
+        "OnlineSecurity_Yes <= 0.00",
+        0.042441254270690454
+      ],
+      [
+        "OnlineBackup_No internet service <= 0.00",
+        0.04046886404522376
+      ],
+      [
+        "TechSupport_Yes <= 0.00",
+        0.037497377747007545
+      ]
+    ],
+    "shap_top": [
+      [
+        "tenure",
+        0.1234
+      ],
+      [
+        "InternetService_Fiber optic",
+        0.0502
+      ],
+      [
+        "TotalCharges",
+        0.0449
+      ],
+      [
+        "Contract_Two year",
+        0.0345
+      ],
+      [
+        "PaymentMethod_Electronic check",
+        0.0306
+      ],
+      [
+        "Contract_One year",
+        0.0175
+      ],
+      [
+        "OnlineSecurity_Yes",
+        0.0161
+      ],
+      [
+        "MonthlyCharges",
+        0.0143
+      ]
+    ]
+  },
+  "sample_low_risk": {
+    "features": {
+      "gender": "Female",
+      "SeniorCitizen": 0,
+      "Partner": "Yes",
+      "Dependents": "Yes",
+      "tenure": 58,
+      "PhoneService": "Yes",
+      "MultipleLines": "No",
+      "InternetService": "No",
+      "OnlineSecurity": "No internet service",
+      "OnlineBackup": "No internet service",
+      "DeviceProtection": "No internet service",
+      "TechSupport": "No internet service",
+      "StreamingTV": "No internet service",
+      "StreamingMovies": "No internet service",
+      "Contract": "Two year",
+      "PaperlessBilling": "No",
+      "PaymentMethod": "Credit card (automatic)",
+      "MonthlyCharges": 20.5,
+      "TotalCharges": 1191.4
+    },
+    "prob_churn": 0.0007177363699102829,
+    "lime_rules": [
+      [
+        "Contract_Two year > 0.00",
+        -0.15996862973753462
+      ],
+      [
+        "InternetService_Fiber optic <= 0.00",
+        -0.10720471863985127
+      ],
+      [
+        "tenure > 0.92",
+        -0.09707215375147733
+      ],
+      [
+        "Contract_One year <= 0.00",
+        0.07174038052797845
+      ],
+      [
+        "OnlineSecurity_Yes <= 0.00",
+        0.03670768158058333
+      ],
+      [
+        "PaymentMethod_Electronic check <= 0.00",
+        -0.03425026335542313
+      ],
+      [
+        "DeviceProtection_No internet service > 0.00",
+        -0.03408212722194779
+      ],
+      [
+        "OnlineBackup_No internet service > 0.00",
+        -0.02927520317934586
+      ]
+    ],
+    "shap_top": [
+      [
+        "Contract_Two year",
+        -0.1212
+      ],
+      [
+        "tenure",
+        -0.0752
+      ],
+      [
+        "InternetService_Fiber optic",
+        -0.0538
+      ],
+      [
+        "MonthlyCharges",
+        -0.0385
+      ],
+      [
+        "DeviceProtection_No internet service",
+        -0.0335
+      ],
+      [
+        "TechSupport_No internet service",
+        -0.0243
+      ],
+      [
+        "OnlineBackup_No internet service",
+        -0.0233
+      ],
+      [
+        "StreamingTV_No internet service",
+        -0.0229
+      ]
+    ]
+  },
+  "confusion_matrix": [
+    [
+      768,
+      267
+    ],
+    [
+      80,
+      294
+    ]
+  ],
+  "test_size": 1409,
+  "train_size": 5634,
+  "churn_prevalence": 0.2653698707936959
+}
