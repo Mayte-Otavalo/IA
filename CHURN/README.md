@@ -1,25 +1,27 @@
-# Guía de Uso: Tarea 7 - Telco Churn ML, XAI y Business Pitch
+# 🚀 Guía de Uso: Tarea 7 - RetenTel AI (Telco Churn ML, NSGA-III, XAI & Business Pitch)
 
-Este repositorio contiene la solución completa para la **Tarea 7: Optimización de Machine Learning, Explainable AI y Business Pitch** (Asignatura: Aprendizaje Automático).
+Este repositorio contiene la solución completa para la **Tarea 7: Optimización de Machine Learning Multiobjetivo, Explainable AI y Business Pitch** (Asignatura: Aprendizaje Automático).
 
 ---
 
-## Contenido del Proyecto
-- **`app.py`**: Aplicación web interactiva en **Streamlit** con 4 módulos:
-  1. *A. Análisis Exploratorio (EDA)* con gráficos interactivos y KPIs.
-  2. *B. Desempeño y Pareto* con comparativa de optimizaciones (Grid, Random, TPE, NSGA-II).
-  3. *C. Predicción & Explicabilidad (XAI)* con formularios y desgloses de SHAP y LIME.
-  4. *D. Aplicación de Negocio & Pitch* con simulador financiero de ROI interactivo.
-- **`train_and_evaluate.py`**: Script de entrenamiento, optimización, cálculo de métricas y serialización de modelos.
-- **`business_pitch.md`**: Documento ejecutivo de la propuesta de negocio (*RetenTel AI*), justificación económica y guion de negociación comercial para el roleplay presencial.
-- **`models/`**: Modelos serializados (`champion_pipeline.joblib`, `preprocessor.joblib`, `metadata.json`).
+## 📂 Contenido del Proyecto
+- **`Tarea7_Churn_ML_Optimization_XAI_Pitch.ipynb`**: Cuaderno Jupyter completo y autosuficiente, diseñado para ejecutarse de extremo a extremo en **Google Colab** o entorno local.
+- **`app.py`**: Aplicación web interactiva en **Streamlit** con 5 módulos:
+  1. *A. Análisis Exploratorio (EDA) & ADASYN*: Distribución de clases, impacto del remuestreo adaptativo y KPIs.
+  2. *B. Desempeño y Pareto NSGA-III*: Comparativa de modelos (**Regresión Logística** vs **CatBoost**) bajo 4 objetivos de optimización, visualización del Frente de Pareto y calibración probabilística con **Brier Score**.
+  3. *C. Predicción & Explicabilidad (XAI)*: Formulario interactivo, gauge de riesgo, desgloses **SHAP** y **LIME**, **Índice de Correlación** de top features e **Intervención Contrafactual (What-If)** prescriptiva.
+  4. *D. Aplicación de Negocio & Pitch*: Simulador financiero de ROI interactivo (+440% ROI) y matriz prescriptiva.
+  5. *E. Asistente IA RetenTel (Chatbot RAG Documental Guardrailed)*: Chatbot conversacional con guardrail estricto que **solo responde preguntas basadas en la documentación oficial del proyecto**, bloqueando consultas fuera de tema.
+- **`train_and_evaluate.py`**: Script de entrenamiento, balanceo con ADASYN, optimización multiobjetivo con NSGA-III, cálculo de métricas y serialización de modelos.
+- **`business_pitch.md`**: Propuesta de negocio ejecutiva (*RetenTel AI*), justificación financiera y guion de negociación comercial para el roleplay presencial.
+- **`models/`**: Artefactos serializados (`champion_pipeline.joblib`, `preprocessor.joblib`, `metadata.json`).
 - **`Telco-Customer-Churn.csv`**: Dataset de IBM / Kaggle con 7,043 clientes.
 
 ---
 
-## Opción A: Ejecución en Google Colab (Recomendada)
+## 🌐 Opción A: Ejecución en Google Colab (Recomendada)
 1. Abre [Google Colab](https://colab.research.google.com/).
-2. Haz clic en **Subir (Upload)** y selecciona el archivo [`Tarea7_Churn_ML_Optimization_XAI_Pitch.ipynb`](file:///C:/Users/mayte.otavalo/Desktop/MAYTE/MACHINE/TAREA%20CHURN/Tarea7_Churn_ML_Optimization_XAI_Pitch.ipynb).
+2. Haz clic en **Subir (Upload)** y selecciona el archivo [`Tarea7_Churn_ML_Optimization_XAI_Pitch.ipynb`](file:///C:/Users/mayte.otavalo/Desktop/MAYTE/MACHINE/IA/CHURN/Tarea7_Churn_ML_Optimization_XAI_Pitch.ipynb).
 3. En el menú superior de Colab, selecciona **Entorno de ejecución $\rightarrow$ Ejecutar todas**.
 4. En la celda final de la **Parte 5**:
    - Se imprimirá tu dirección IP pública (ejemplo: `34.125.80.20`).
@@ -29,8 +31,8 @@ Este repositorio contiene la solución completa para la **Tarea 7: Optimización
 
 ---
 
-## Opción B: Ejecución Local en tu Computadora
-1. **Entrenar y verificar el modelo (opcional si ya existen los archivos en `models/`):**
+## 💻 Opción B: Ejecución Local en tu Computadora
+1. **Entrenar y verificar el modelo:**
    ```bash
    python train_and_evaluate.py
    ```
@@ -42,18 +44,33 @@ Este repositorio contiene la solución completa para la **Tarea 7: Optimización
 
 ---
 
-##  Resumen de Resultados Técnicos
+## 📊 Resumen de Resultados Técnicos
 
-| Estrategia de Optimización | Evaluaciones | Tiempo (s) | Best CV F1 | Test Recall | Test F1 | Test ROC-AUC |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Grid Search** | 54 | 30.1s | 0.6367 | 78.3% | 0.6288 | 0.8424 |
-| **Random Search** | 25 | 13.9s | 0.6367 | 78.3% | 0.6288 | 0.8424 |
-| **Bayesian (Optuna TPE)** | 25 | 53.0s | **0.6388** | **78.6%** | **0.6289** | **0.8412** |
-| **NSGA-II (Multiobjetivo)** | 35 | 98.3s | 0.6348 | 73.5% | 0.6194 | 0.8373 |
+### 1. Comparativa de Modelos Base (con Balanceo ADASYN)
+| Modelo | Recall | F1-Score | F2-Score ($\beta=2$) | ROC-AUC | Brier Score | Latencia (ms / 1k) | Tamaño (KB) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Regresión Logística** | 83.16% | 0.6385 | 0.7266 | 0.8396 | 0.1767 | ~0.5 ms | 0.8 KB |
+| **CatBoost (Campeón NSGA-III)** | 71.39% | 0.6305 | **0.6780** | **0.8442** | **0.1467** | ~5.9 ms | 12.7 KB |
 
-### Variables más determinantes identificadas por SHAP:
-1. `tenure` (Antigüedad del cliente: menor a 12 meses dispara el riesgo de fuga).
-2. `InternetService_Fiber optic` (Clientes con fibra sin soporte técnico presentan alta deserción).
-3. `Contract_Two year` / `Contract_One year` (Los contratos anuales actúan como el mayor escudo de retención).
-4. `PaymentMethod_Electronic check` (Métodos de pago manuales tienen una correlación marcada con el churn).
-5. `MonthlyCharges` / `TotalCharges` (Cargos mensuales elevados sin servicios de valor añadido).
+> [!NOTE]
+> **Calibración con Brier Score:** El modelo CatBoost optimizado alcanza un Brier Score de **0.1467** (frente a 0.25 de azar), certificando que las probabilidades de fuga son consistentes y fiables para la toma de decisiones comerciales.
+
+### 2. Optimización Multiobjetivo (NSGA-III)
+Se optimizaron 4 objetivos simultáneos:
+1. **Maximizar F2-Score** (priorización 2x de Recall para no dejar escapar clientes en fuga).
+2. **Minimizar Latencia de Inferencia** (scoring en streaming < 6 ms por 1k).
+3. **Minimizar Tamaño del Modelo** (< 13 KB para microservicios edge).
+4. **Maximizar ROC-AUC** (discriminación global > 0.84).
+
+### 3. Explicabilidad XAI e Índice de Correlación SHAP
+- `Contract_Two year`: $r = -0.9929$ (Fuerte factor protector contra el churn).
+- `tenure`: $r = -0.7750$ (Mayor antigüedad reduce drásticamente el riesgo).
+- `InternetService_Fiber optic`: $r = +0.9972$ (Correlación directa con aumento de fuga sin soporte técnico).
+- `PaymentMethod_Electronic check`: $r = +0.9936$ (Fricción en pagos manuales).
+- `TechSupport_Yes`: $r = -0.9837$ (Blindaje de retención).
+
+### 4. Motor Contrafactual (What-If)
+Para clientes de alto riesgo (ej. 76.5% probabilidad de churn), el algoritmo contrafactual identifica que modificando el contrato a anual, bonificando soporte técnico y habilitando débito automático se reduce la probabilidad a **17.8%** (reducción neta de **58.8%**).
+
+### 5. Chatbot RAG Guardrailed
+Incluye un módulo conversacional con guardrail de seguridad estricto que **solo responde a preguntas soportadas por la documentación del proyecto** (métrica ROI, NSGA-III, ADASYN, Brier score, XAI), y devuelve un mensaje de advertencia claro ante consultas fuera de tema.
