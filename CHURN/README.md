@@ -1,11 +1,10 @@
-# 🚀 Guía de Uso: Tarea 7 - Telco Churn ML, XAI y Business Pitch
+# Guía de Uso: Tarea 7 - Telco Churn ML, XAI y Business Pitch
 
 Este repositorio contiene la solución completa para la **Tarea 7: Optimización de Machine Learning, Explainable AI y Business Pitch** (Asignatura: Aprendizaje Automático).
 
 ---
 
-## 📂 Contenido del Proyecto
-- **`Tarea7_Churn_ML_Optimization_XAI_Pitch.ipynb`**: Cuaderno Jupyter completo y autosuficiente, diseñado para ejecutarse celda a celda en **Google Colab**.
+## Contenido del Proyecto
 - **`app.py`**: Aplicación web interactiva en **Streamlit** con 4 módulos:
   1. *A. Análisis Exploratorio (EDA)* con gráficos interactivos y KPIs.
   2. *B. Desempeño y Pareto* con comparativa de optimizaciones (Grid, Random, TPE, NSGA-II).
@@ -18,7 +17,7 @@ Este repositorio contiene la solución completa para la **Tarea 7: Optimización
 
 ---
 
-## 🌐 Opción A: Ejecución en Google Colab (Recomendada)
+## Opción A: Ejecución en Google Colab (Recomendada)
 1. Abre [Google Colab](https://colab.research.google.com/).
 2. Haz clic en **Subir (Upload)** y selecciona el archivo [`Tarea7_Churn_ML_Optimization_XAI_Pitch.ipynb`](file:///C:/Users/mayte.otavalo/Desktop/MAYTE/MACHINE/TAREA%20CHURN/Tarea7_Churn_ML_Optimization_XAI_Pitch.ipynb).
 3. En el menú superior de Colab, selecciona **Entorno de ejecución $\rightarrow$ Ejecutar todas**.
@@ -30,7 +29,7 @@ Este repositorio contiene la solución completa para la **Tarea 7: Optimización
 
 ---
 
-## 💻 Opción B: Ejecución Local en tu Computadora
+## Opción B: Ejecución Local en tu Computadora
 1. **Entrenar y verificar el modelo (opcional si ya existen los archivos en `models/`):**
    ```bash
    python train_and_evaluate.py
@@ -43,7 +42,7 @@ Este repositorio contiene la solución completa para la **Tarea 7: Optimización
 
 ---
 
-## 📊 Resumen de Resultados Técnicos
+##  Resumen de Resultados Técnicos
 
 | Estrategia de Optimización | Evaluaciones | Tiempo (s) | Best CV F1 | Test Recall | Test F1 | Test ROC-AUC |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
