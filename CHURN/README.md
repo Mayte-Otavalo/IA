@@ -1,11 +1,9 @@
-# 🚀 Guía de Uso: Tarea 7 - RetenTel AI (Telco Churn ML, NSGA-III, XAI & Business Pitch)
-
-Este repositorio contiene la solución completa para la **Tarea 7: Optimización de Machine Learning Multiobjetivo, Explainable AI y Business Pitch** (Asignatura: Aprendizaje Automático).
+# Guía de Uso: Tarea 7 - RetenTel AI (Telco Churn ML, NSGA-III, XAI & Business Pitch)
 
 ---
 
-## 📂 Contenido del Proyecto
-- **`Tarea7_Churn_ML_Optimization_XAI_Pitch.ipynb`**: Cuaderno Jupyter completo y autosuficiente, diseñado para ejecutarse de extremo a extremo en **Google Colab** o entorno local.
+##  Contenido del Proyecto
+
 - **`app.py`**: Aplicación web interactiva en **Streamlit** con 5 módulos:
   1. *A. Análisis Exploratorio (EDA) & ADASYN*: Distribución de clases, impacto del remuestreo adaptativo y KPIs.
   2. *B. Desempeño y Pareto NSGA-III*: Comparativa de modelos (**Regresión Logística** vs **CatBoost**) bajo 4 objetivos de optimización, visualización del Frente de Pareto y calibración probabilística con **Brier Score**.
@@ -19,7 +17,7 @@ Este repositorio contiene la solución completa para la **Tarea 7: Optimización
 
 ---
 
-## 🌐 Opción A: Ejecución en Google Colab (Recomendada)
+##  Opción A: Ejecución en Google Colab (Recomendada)
 1. Abre [Google Colab](https://colab.research.google.com/).
 2. Haz clic en **Subir (Upload)** y selecciona el archivo [`Tarea7_Churn_ML_Optimization_XAI_Pitch.ipynb`](file:///C:/Users/mayte.otavalo/Desktop/MAYTE/MACHINE/IA/CHURN/Tarea7_Churn_ML_Optimization_XAI_Pitch.ipynb).
 3. En el menú superior de Colab, selecciona **Entorno de ejecución $\rightarrow$ Ejecutar todas**.
@@ -31,7 +29,7 @@ Este repositorio contiene la solución completa para la **Tarea 7: Optimización
 
 ---
 
-## 💻 Opción B: Ejecución Local en tu Computadora
+## Opción B: Ejecución Local en tu Computadora
 1. **Entrenar y verificar el modelo:**
    ```bash
    python train_and_evaluate.py
@@ -44,7 +42,7 @@ Este repositorio contiene la solución completa para la **Tarea 7: Optimización
 
 ---
 
-## 📊 Resumen de Resultados Técnicos
+## Resumen de Resultados Técnicos
 
 ### 1. Comparativa de Modelos Base (con Balanceo ADASYN)
 | Modelo | Recall | F1-Score | F2-Score ($\beta=2$) | ROC-AUC | Brier Score | Latencia (ms / 1k) | Tamaño (KB) |
