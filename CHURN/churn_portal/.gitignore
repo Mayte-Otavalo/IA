@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Secretos locales: credenciales y direcciones de correo
+.streamlit/secrets.toml
+
+# El notebook trae un token de TabPFN escrito en el código. Revóquelo y limpie el notebook antes de subirlo.
+notebooks/
+
+# Notas y borradores de trabajo
+PRODUCT.md
+DESIGN.md
+*.draft.*

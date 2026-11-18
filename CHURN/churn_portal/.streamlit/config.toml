@@ -1,0 +1,29 @@
+[server]
+headless = true
+maxUploadSize = 25
+enableXsrfProtection = true
+enableStaticServing = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+showErrorDetails = "none"
+
+[theme]
+base = "light"
+primaryColor = "#0A72EF"
+backgroundColor = "#F6F9FC"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#061B31"
+font = "RetenSans"
+baseFontSize = 15
+baseRadius = "4px"
+borderColor = "#E5EDF5"
+showWidgetBorder = true
+
+[[theme.fontFaces]]
+family = "RetenSans"
+url = "app/static/fonts/source-sans-3-latin.woff2"
+weight = "200 900"

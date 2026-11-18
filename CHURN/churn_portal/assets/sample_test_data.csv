@@ -1,0 +1,201 @@
+customerID,nombre,correo,gender,SeniorCitizen,Partner,Dependents,tenure,PhoneService,MultipleLines,InternetService,OnlineSecurity,OnlineBackup,DeviceProtection,TechSupport,StreamingTV,StreamingMovies,Contract,PaperlessBilling,PaymentMethod,MonthlyCharges,TotalCharges,Actual_Churn,Predicted_Probability
+CLI-0001,Diego,diego.0001@example.com,Female,0,Yes,No,9,Yes,No,DSL,No,Yes,No,No,No,No,Month-to-month,No,Mailed check,50.85,466.6,0,0.5332784806017711
+CLI-0002,Fernanda,fernanda.0002@example.com,Female,0,No,No,18,Yes,Yes,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,50.3,913.3,0,0.5834982297445837
+CLI-0003,María,maria.0003@example.com,Female,0,Yes,No,64,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic),19.45,1225.65,0,0.06256115619943102
+CLI-0004,Gabriela,gabriela.0004@example.com,Male,1,No,No,19,Yes,Yes,Fiber optic,No,No,Yes,No,No,No,Month-to-month,Yes,Electronic check,79.85,1471.75,1,0.7175799925874057
+CLI-0005,Santiago,santiago.0005@example.com,Male,0,Yes,Yes,66,Yes,Yes,DSL,No,No,Yes,No,Yes,No,Two year,Yes,Bank transfer (automatic),63.3,4189.7,0,0.12689192284431244
+CLI-0006,Fernanda,fernanda.0006@example.com,Female,0,Yes,Yes,51,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check,19.95,1028.75,0,0.06178781134568387
+CLI-0007,Isabel,isabel.0007@example.com,Male,0,Yes,No,59,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,No,Electronic check,113.75,6561.25,0,0.3519013901835843
+CLI-0008,Mateo,mateo.0008@example.com,Male,0,Yes,No,18,Yes,No,DSL,No,No,Yes,No,No,No,Month-to-month,Yes,Mailed check,49.55,878.35,1,0.4571524379425258
+CLI-0009,Diego,diego.0009@example.com,Male,0,No,No,41,No,No phone service,DSL,No,No,Yes,No,Yes,Yes,One year,Yes,Electronic check,51.35,2075.1,0,0.4473255431466299
+CLI-0010,Sofía,sofia.0010@example.com,Female,0,Yes,Yes,1,Yes,Yes,Fiber optic,Yes,No,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check,102.45,102.45,1,0.8778407306486345
+CLI-0011,Pablo,pablo.0011@example.com,Male,0,Yes,Yes,20,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check,90.2,1776.55,1,0.706388439660232
+CLI-0012,Daniela,daniela.0012@example.com,Male,0,No,No,7,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Mailed check,19.95,147.5,0,0.43575257375590487
+CLI-0013,Ricardo,ricardo.0013@example.com,Male,1,Yes,No,7,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,75.4,533.05,0,0.8117647037514714
+CLI-0014,Pablo,pablo.0014@example.com,Female,1,No,No,71,Yes,Yes,Fiber optic,No,No,Yes,No,Yes,Yes,Two year,No,Bank transfer (automatic),104.05,7413.55,0,0.24123063907469428
+CLI-0015,Mauricio,mauricio.0015@example.com,Female,0,No,Yes,48,No,No phone service,DSL,No,Yes,Yes,No,No,Yes,Month-to-month,No,Credit card (automatic),45.55,2108.35,0,0.4013241957581624
+CLI-0016,Isabel,isabel.0016@example.com,Female,0,No,No,3,Yes,No,DSL,No,No,Yes,No,Yes,No,Month-to-month,No,Electronic check,57.55,161.45,0,0.6932099727608002
+CLI-0017,Sebastián,sebastian.0017@example.com,Male,0,No,No,6,Yes,No,Fiber optic,Yes,Yes,No,No,No,No,Month-to-month,Yes,Electronic check,78.95,494.95,0,0.759981488908715
+CLI-0018,Sebastián,sebastian.0018@example.com,Male,0,No,No,52,No,No phone service,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,No,Credit card (automatic),63.9,3334.95,0,0.11335354531466814
+CLI-0019,Sebastián,sebastian.0019@example.com,Male,0,No,No,3,No,No phone service,DSL,No,No,Yes,No,Yes,No,Month-to-month,Yes,Mailed check,40.15,130.75,1,0.6958938727868279
+CLI-0020,Mauricio,mauricio.0020@example.com,Male,0,Yes,Yes,8,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Credit card (automatic),19.9,153.95,0,0.23559048899989565
+CLI-0021,Mateo,mateo.0021@example.com,Female,0,Yes,Yes,40,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Electronic check,26.2,1077.5,0,0.32457084174933787
+CLI-0022,Andrés,andres.0022@example.com,Male,0,No,No,34,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check,106.35,3549.25,1,0.7439131029089547
+CLI-0023,Lucía,lucia.0023@example.com,Female,1,No,No,7,Yes,No,DSL,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check,48.2,340.35,0,0.646889747893424
+CLI-0024,Isabel,isabel.0024@example.com,Male,0,Yes,Yes,72,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic),25.0,1738.9,0,0.021337958428134934
+CLI-0025,Sofía,sofia.0025@example.com,Male,0,Yes,No,71,Yes,No,DSL,Yes,No,Yes,Yes,Yes,Yes,Two year,Yes,Electronic check,82.55,5832.65,0,0.09577801090191743
+CLI-0026,Mauricio,mauricio.0026@example.com,Female,0,Yes,Yes,57,Yes,No,DSL,Yes,No,No,No,Yes,Yes,One year,Yes,Bank transfer (automatic),70.1,3913.3,1,0.23562057545156634
+CLI-0027,Andrés,andres.0027@example.com,Male,1,Yes,Yes,66,Yes,Yes,Fiber optic,No,No,Yes,No,Yes,Yes,Month-to-month,Yes,Credit card (automatic),99.5,6822.15,1,0.6116561649166635
+CLI-0028,Valeria,valeria.0028@example.com,Female,0,Yes,No,72,Yes,Yes,Fiber optic,Yes,Yes,Yes,No,Yes,Yes,Two year,Yes,Electronic check,109.55,8165.1,0,0.23936782192823608
+CLI-0029,Mateo,mateo.0029@example.com,Female,0,No,No,49,Yes,No,DSL,Yes,Yes,Yes,Yes,No,No,Two year,No,Bank transfer (automatic),67.4,3306.85,0,0.09539165970051205
+CLI-0030,Ana,ana.0030@example.com,Female,1,Yes,Yes,34,Yes,Yes,Fiber optic,No,Yes,No,No,No,No,Month-to-month,Yes,Mailed check,79.6,2718.3,1,0.5634734601635323
+CLI-0031,Mateo,mateo.0031@example.com,Male,0,No,No,20,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Mailed check,19.7,419.4,0,0.08739630267474671
+CLI-0032,Carlos,carlos.0032@example.com,Female,1,No,No,7,Yes,No,Fiber optic,Yes,No,No,No,No,No,Month-to-month,No,Bank transfer (automatic),76.45,503.6,1,0.6615327100949433
+CLI-0033,Ricardo,ricardo.0033@example.com,Male,0,No,No,41,Yes,Yes,DSL,No,No,Yes,No,No,No,Month-to-month,Yes,Bank transfer (automatic),55.7,2237.55,0,0.4288149818123992
+CLI-0034,Fernanda,fernanda.0034@example.com,Female,0,No,No,23,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check,93.5,2341.55,0,0.7232212654245714
+CLI-0035,Esteban,esteban.0035@example.com,Female,0,No,No,2,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Mailed check,20.45,42.45,0,0.5392235295136033
+CLI-0036,Ricardo,ricardo.0036@example.com,Female,0,No,No,53,Yes,No,Fiber optic,No,Yes,Yes,Yes,No,Yes,One year,Yes,Credit card (automatic),94.45,5042.75,0,0.4268882780083462
+CLI-0037,Carlos,carlos.0037@example.com,Male,0,No,Yes,47,Yes,No,DSL,Yes,Yes,No,No,No,No,Month-to-month,Yes,Electronic check,55.3,2654.05,0,0.43812758268738505
+CLI-0038,Valeria,valeria.0038@example.com,Male,0,Yes,Yes,51,Yes,Yes,Fiber optic,Yes,Yes,No,Yes,Yes,Yes,One year,No,Credit card (automatic),110.05,5686.4,0,0.41526510217377394
+CLI-0039,Sebastián,sebastian.0039@example.com,Female,0,Yes,Yes,8,Yes,No,DSL,No,No,No,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,68.55,564.35,0,0.6469592953138029
+CLI-0040,Carolina,carolina.0040@example.com,Female,0,No,No,3,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check,89.45,240.45,1,0.8415857825546832
+CLI-0041,Valeria,valeria.0041@example.com,Female,1,Yes,No,72,Yes,Yes,Fiber optic,Yes,No,Yes,Yes,Yes,Yes,Two year,Yes,Mailed check,109.75,8075.35,0,0.14143797134614833
+CLI-0042,Diego,diego.0042@example.com,Female,0,No,No,18,Yes,No,Fiber optic,Yes,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check,96.05,1740.7,1,0.7071669231278632
+CLI-0043,María,maria.0043@example.com,Female,0,Yes,Yes,34,Yes,No,DSL,Yes,Yes,Yes,No,No,No,One year,Yes,Mailed check,60.8,2042.05,0,0.21366145953994092
+CLI-0044,Pablo,pablo.0044@example.com,Male,0,Yes,Yes,69,Yes,Yes,Fiber optic,No,No,No,Yes,Yes,Yes,Two year,Yes,Electronic check,99.35,6856.45,0,0.40343993043578064
+CLI-0045,Esteban,esteban.0045@example.com,Female,0,Yes,Yes,6,Yes,Yes,DSL,No,No,No,No,No,No,Month-to-month,Yes,Credit card (automatic),48.95,273.25,0,0.6065813397475202
+CLI-0046,Sofía,sofia.0046@example.com,Male,0,Yes,Yes,25,Yes,No,DSL,Yes,Yes,Yes,No,No,No,One year,Yes,Bank transfer (automatic),61.6,1611.0,0,0.23403921807687883
+CLI-0047,Lucía,lucia.0047@example.com,Female,0,No,No,23,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,No,Bank transfer (automatic),75.6,1758.6,1,0.5627357732240946
+CLI-0048,Fernanda,fernanda.0048@example.com,Female,0,No,Yes,2,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Electronic check,19.6,35.85,1,0.5948753203619013
+CLI-0049,Andrés,andres.0049@example.com,Male,0,No,No,32,Yes,Yes,Fiber optic,No,No,No,No,No,Yes,Month-to-month,Yes,Bank transfer (automatic),85.65,2664.3,0,0.6108982069841022
+CLI-0050,Luis,luis.0050@example.com,Female,0,Yes,No,62,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic),23.65,1416.75,0,0.0575764955431039
+CLI-0051,Diego,diego.0051@example.com,Male,0,No,No,1,No,No phone service,DSL,No,No,No,No,No,Yes,Month-to-month,Yes,Electronic check,35.55,35.55,1,0.8181806574178302
+CLI-0052,Lucía,lucia.0052@example.com,Male,1,No,No,1,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Bank transfer (automatic),69.5,69.5,1,0.8320382167170303
+CLI-0053,Paola,paola.0053@example.com,Female,0,Yes,No,60,Yes,No,DSL,Yes,Yes,No,Yes,No,No,Two year,No,Bank transfer (automatic),59.85,3483.45,0,0.08825146487053219
+CLI-0054,Camila,camila.0054@example.com,Male,0,Yes,Yes,21,Yes,Yes,DSL,Yes,No,No,No,Yes,Yes,One year,Yes,Bank transfer (automatic),75.9,1549.75,0,0.3027098999223697
+CLI-0055,Javier,javier.0055@example.com,Male,0,Yes,Yes,59,Yes,Yes,Fiber optic,Yes,Yes,No,Yes,Yes,Yes,Two year,Yes,Mailed check,111.1,6555.2,0,0.25953542868320817
+CLI-0056,Esteban,esteban.0056@example.com,Male,0,Yes,Yes,27,Yes,No,Fiber optic,Yes,Yes,No,No,No,No,One year,Yes,Credit card (automatic),80.65,2209.75,0,0.3608623058416835
+CLI-0057,Carolina,carolina.0057@example.com,Male,0,Yes,Yes,4,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,No,Electronic check,44.8,169.65,0,0.6548119860423661
+CLI-0058,Sebastián,sebastian.0058@example.com,Male,1,No,No,65,Yes,Yes,Fiber optic,Yes,No,Yes,Yes,Yes,Yes,Two year,Yes,Electronic check,109.05,7108.2,0,0.37607157676561276
+CLI-0059,Gabriela,gabriela.0059@example.com,Male,0,Yes,No,49,No,No phone service,DSL,No,Yes,No,No,Yes,Yes,Two year,No,Credit card (automatic),49.65,2409.9,0,0.16201940916401902
+CLI-0060,Andrés,andres.0060@example.com,Female,0,No,No,28,Yes,Yes,DSL,Yes,No,Yes,No,No,No,One year,No,Mailed check,59.0,1654.45,0,0.20662150719132863
+CLI-0061,Mateo,mateo.0061@example.com,Female,0,Yes,No,6,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check,105.3,545.2,1,0.8610497206937391
+CLI-0062,Carolina,carolina.0062@example.com,Male,0,No,No,44,Yes,No,DSL,Yes,No,No,Yes,Yes,No,One year,No,Electronic check,65.4,2774.55,0,0.25627899122331466
+CLI-0063,Andrés,andres.0063@example.com,Female,0,Yes,Yes,68,No,No phone service,DSL,No,Yes,Yes,Yes,Yes,Yes,Two year,No,Credit card (automatic),60.3,4109.0,0,0.11221012097389237
+CLI-0064,Daniela,daniela.0064@example.com,Male,0,Yes,Yes,5,Yes,No,Fiber optic,Yes,No,Yes,No,No,Yes,Month-to-month,Yes,Mailed check,90.35,434.5,0,0.7015162616014962
+CLI-0065,Mauricio,mauricio.0065@example.com,Female,0,No,No,7,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Mailed check,69.9,497.3,0,0.7286717157789097
+CLI-0066,Mateo,mateo.0066@example.com,Male,0,Yes,Yes,67,Yes,Yes,Fiber optic,Yes,Yes,Yes,No,Yes,Yes,One year,Yes,Electronic check,111.3,7482.1,1,0.5218656182052002
+CLI-0067,Fernanda,fernanda.0067@example.com,Male,0,Yes,No,34,Yes,Yes,Fiber optic,No,No,Yes,No,Yes,Yes,Month-to-month,No,Electronic check,100.85,3527.3,0,0.7024845500429098
+CLI-0068,Sofía,sofia.0068@example.com,Female,0,No,No,22,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Bank transfer (automatic),20.85,450.65,0,0.15692292112634043
+CLI-0069,Mateo,mateo.0069@example.com,Male,0,No,No,46,Yes,Yes,Fiber optic,Yes,No,No,No,Yes,No,Month-to-month,Yes,Credit card (automatic),89.15,4245.55,0,0.5142454865812924
+CLI-0070,Luis,luis.0070@example.com,Male,0,No,No,25,Yes,Yes,DSL,Yes,Yes,Yes,Yes,No,Yes,Month-to-month,No,Bank transfer (automatic),81.75,2028.8,0,0.3571750808989424
+CLI-0071,Isabel,isabel.0071@example.com,Male,1,Yes,No,7,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Mailed check,74.4,527.9,1,0.7457496182873162
+CLI-0072,Luis,luis.0072@example.com,Male,0,Yes,No,63,Yes,No,DSL,Yes,Yes,No,Yes,Yes,No,One year,No,Credit card (automatic),70.8,4448.8,0,0.17514746296228437
+CLI-0073,Ricardo,ricardo.0073@example.com,Male,1,Yes,No,60,Yes,Yes,Fiber optic,No,No,No,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,99.0,6017.9,0,0.6861411551835491
+CLI-0074,Isabel,isabel.0074@example.com,Male,0,No,No,1,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Mailed check,19.9,19.9,0,0.625852638436134
+CLI-0075,Carlos,carlos.0075@example.com,Female,0,Yes,Yes,31,Yes,Yes,Fiber optic,No,Yes,No,No,No,Yes,Month-to-month,Yes,Electronic check,91.15,2995.45,1,0.684397146261424
+CLI-0076,Ana,ana.0076@example.com,Male,0,No,No,32,Yes,No,Fiber optic,No,No,No,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,96.2,3183.4,1,0.67739622814477
+CLI-0077,Mauricio,mauricio.0077@example.com,Male,0,Yes,No,70,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,One year,No,Credit card (automatic),115.65,7968.85,1,0.372769184639175
+CLI-0078,Esteban,esteban.0078@example.com,Male,0,No,No,56,Yes,No,DSL,No,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Credit card (automatic),81.8,4534.45,0,0.14628385858110046
+CLI-0079,Javier,javier.0079@example.com,Male,0,No,No,55,Yes,No,Fiber optic,Yes,Yes,No,No,Yes,Yes,One year,Yes,Mailed check,100.9,5552.05,0,0.45277708735196404
+CLI-0080,Lucía,lucia.0080@example.com,Male,0,No,No,22,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Credit card (automatic),20.3,467.15,0,0.1533293879097301
+CLI-0081,Fernanda,fernanda.0081@example.com,Female,0,Yes,No,72,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Bank transfer (automatic),25.25,1841.2,0,0.026796675683167258
+CLI-0082,Lucía,lucia.0082@example.com,Male,0,No,No,46,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,Two year,No,Electronic check,108.65,4903.2,0,0.4044635577948633
+CLI-0083,Fernanda,fernanda.0083@example.com,Female,0,No,No,6,Yes,No,Fiber optic,No,Yes,No,No,No,Yes,Month-to-month,Yes,Mailed check,85.95,514.6,0,0.7557755979323525
+CLI-0084,Santiago,santiago.0084@example.com,Male,1,No,No,67,Yes,Yes,Fiber optic,No,No,Yes,No,Yes,Yes,Month-to-month,Yes,Credit card (automatic),101.4,6841.05,0,0.6336849439479278
+CLI-0085,Ana,ana.0085@example.com,Female,0,Yes,No,3,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Mailed check,19.6,55.25,0,0.4997370326069835
+CLI-0086,Luis,luis.0086@example.com,Female,0,No,No,23,Yes,Yes,DSL,No,No,No,Yes,Yes,Yes,One year,Yes,Mailed check,73.75,1756.6,0,0.3079017519220035
+CLI-0087,Fernanda,fernanda.0087@example.com,Male,0,Yes,Yes,46,Yes,No,DSL,Yes,No,Yes,Yes,Yes,Yes,Two year,No,Mailed check,81.0,3846.35,0,0.10164887767157745
+CLI-0088,Sofía,sofia.0088@example.com,Female,0,Yes,Yes,67,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Mailed check,24.9,1680.25,0,0.055715046593072075
+CLI-0089,María,maria.0089@example.com,Male,0,No,Yes,29,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check,19.85,535.05,0,0.1281517118897697
+CLI-0090,Gabriela,gabriela.0090@example.com,Female,1,Yes,No,26,Yes,Yes,Fiber optic,No,No,Yes,No,Yes,Yes,Month-to-month,Yes,Bank transfer (automatic),98.1,2510.7,0,0.6693867050402337
+CLI-0091,Carlos,carlos.0091@example.com,Male,1,Yes,No,46,Yes,Yes,Fiber optic,No,No,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check,98.85,4564.9,0,0.7358307917583907
+CLI-0092,Sebastián,sebastian.0092@example.com,Female,0,No,No,60,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,Two year,No,Electronic check,104.7,6333.8,0,0.4239785627294168
+CLI-0093,Andrés,andres.0093@example.com,Male,0,Yes,No,69,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check,19.9,1363.45,0,0.04932991979470009
+CLI-0094,Santiago,santiago.0094@example.com,Female,0,No,No,5,Yes,Yes,DSL,No,Yes,No,No,No,Yes,Month-to-month,Yes,Electronic check,64.0,370.25,0,0.7215250793155308
+CLI-0095,Daniela,daniela.0095@example.com,Female,0,No,No,50,Yes,Yes,DSL,No,Yes,No,Yes,Yes,Yes,Two year,Yes,Mailed check,79.6,4024.2,0,0.14122706702468657
+CLI-0096,Mateo,mateo.0096@example.com,Female,0,No,No,1,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Mailed check,25.75,25.75,0,0.6298074016760451
+CLI-0097,Lucía,lucia.0097@example.com,Male,0,No,No,10,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,70.0,740.0,1,0.7695058457386498
+CLI-0098,Isabel,isabel.0098@example.com,Female,0,Yes,Yes,1,Yes,No,DSL,No,No,Yes,No,No,No,Month-to-month,No,Mailed check,50.45,50.45,1,0.6915569797088792
+CLI-0099,Diego,diego.0099@example.com,Female,0,No,No,1,Yes,No,DSL,Yes,Yes,No,No,No,No,Month-to-month,Yes,Electronic check,54.9,54.9,1,0.7420583891006935
+CLI-0100,Ana,ana.0100@example.com,Female,0,No,No,35,Yes,Yes,DSL,Yes,No,Yes,Yes,Yes,Yes,One year,Yes,Credit card (automatic),85.95,3110.1,1,0.27220830980286276
+CLI-0101,Pablo,pablo.0101@example.com,Female,0,Yes,Yes,13,Yes,No,DSL,Yes,No,Yes,No,No,Yes,Month-to-month,Yes,Mailed check,63.15,816.8,0,0.43702511654984616
+CLI-0102,Lucía,lucia.0102@example.com,Female,1,No,No,72,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,No,Yes,Two year,Yes,Bank transfer (automatic),107.4,7748.75,0,0.1372981409400335
+CLI-0103,Daniela,daniela.0103@example.com,Female,0,Yes,Yes,71,Yes,No,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,No,Credit card (automatic),87.25,6328.7,0,0.0582891760771554
+CLI-0104,Mauricio,mauricio.0104@example.com,Female,1,No,No,42,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,Yes,Bank transfer (automatic),104.75,4323.45,1,0.6606135493368722
+CLI-0105,Camila,camila.0105@example.com,Female,0,Yes,Yes,18,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Credit card (automatic),24.65,471.35,0,0.09322783602000091
+CLI-0106,Daniela,daniela.0106@example.com,Male,0,No,No,1,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Bank transfer (automatic),19.65,19.65,0,0.585178203883111
+CLI-0107,Isabel,isabel.0107@example.com,Male,0,Yes,Yes,71,Yes,Yes,Fiber optic,Yes,No,No,No,Yes,Yes,Two year,Yes,Electronic check,97.2,6910.3,0,0.2792432953307278
+CLI-0108,Andrés,andres.0108@example.com,Male,0,No,No,3,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,No,Mailed check,75.0,209.1,1,0.7595269128620076
+CLI-0109,Mauricio,mauricio.0109@example.com,Male,0,Yes,Yes,69,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,Yes,Credit card (automatic),20.55,1403.1,0,0.11108943275809988
+CLI-0110,Camila,camila.0110@example.com,Female,1,No,No,35,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,No,Electronic check,70.55,2419.0,0,0.6092126542499249
+CLI-0111,Pablo,pablo.0111@example.com,Male,0,Yes,Yes,56,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,No,Mailed check,115.85,6567.9,0,0.25194966285394127
+CLI-0112,Javier,javier.0112@example.com,Male,0,No,No,21,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Mailed check,19.95,416.4,0,0.28239959428738615
+CLI-0113,Fernanda,fernanda.0113@example.com,Female,0,No,No,59,Yes,No,Fiber optic,No,No,Yes,No,Yes,Yes,Two year,No,Electronic check,95.8,5655.45,0,0.3832061066382913
+CLI-0114,Sebastián,sebastian.0114@example.com,Male,0,No,No,40,Yes,No,DSL,No,No,No,Yes,No,No,Month-to-month,Yes,Electronic check,51.1,2092.9,0,0.47277026904811636
+CLI-0115,Carlos,carlos.0115@example.com,Male,0,No,No,49,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Credit card (automatic),19.9,1022.6,0,0.07910098332168426
+CLI-0116,Pablo,pablo.0116@example.com,Male,0,Yes,No,32,Yes,Yes,Fiber optic,No,No,Yes,No,No,No,Month-to-month,Yes,Electronic check,78.9,2447.95,1,0.6774994722321674
+CLI-0117,Daniela,daniela.0117@example.com,Female,0,No,No,10,No,No phone service,DSL,Yes,No,No,No,No,No,Month-to-month,No,Mailed check,29.75,301.9,0,0.49892261701130786
+CLI-0118,Camila,camila.0118@example.com,Male,0,Yes,Yes,72,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic),19.95,1322.85,0,0.02003657419731984
+CLI-0119,Fernanda,fernanda.0119@example.com,Male,0,Yes,Yes,1,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,71.0,71.0,1,0.8525659177950408
+CLI-0120,Mateo,mateo.0120@example.com,Male,0,No,No,72,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Credit card (automatic),19.8,1468.75,0,0.024754311350633135
+CLI-0121,Carlos,carlos.0121@example.com,Male,0,Yes,No,55,No,No phone service,DSL,No,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Bank transfer (automatic),54.55,2978.3,1,0.40193662159655724
+CLI-0122,Esteban,esteban.0122@example.com,Male,0,Yes,No,72,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Credit card (automatic),114.1,8086.4,0,0.15089352186263702
+CLI-0123,Carolina,carolina.0123@example.com,Female,0,Yes,Yes,6,No,No phone service,DSL,No,Yes,Yes,Yes,No,No,Two year,No,Mailed check,40.55,217.5,0,0.1693520137926207
+CLI-0124,Esteban,esteban.0124@example.com,Male,1,Yes,No,1,No,No phone service,DSL,No,No,No,No,No,No,Month-to-month,No,Electronic check,25.05,25.05,1,0.7721737129693046
+CLI-0125,Andrés,andres.0125@example.com,Male,0,No,Yes,71,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check,24.35,1654.6,0,0.025948856845663767
+CLI-0126,María,maria.0126@example.com,Female,0,Yes,Yes,9,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check,20.35,191.1,0,0.10861904355243912
+CLI-0127,Valeria,valeria.0127@example.com,Female,0,Yes,No,40,Yes,Yes,Fiber optic,No,No,No,Yes,No,No,Month-to-month,Yes,Credit card (automatic),78.85,3126.85,0,0.5267049425173899
+CLI-0128,Javier,javier.0128@example.com,Male,0,No,No,1,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check,19.05,19.05,0,0.5251354178399973
+CLI-0129,Valeria,valeria.0129@example.com,Male,0,No,No,1,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,69.9,69.9,0,0.8613249722680998
+CLI-0130,Pablo,pablo.0130@example.com,Female,0,Yes,Yes,30,No,No phone service,DSL,No,No,No,Yes,Yes,Yes,Month-to-month,No,Credit card (automatic),51.2,1561.5,1,0.37730519358506925
+CLI-0131,Camila,camila.0131@example.com,Female,0,No,Yes,2,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Bank transfer (automatic),20.5,38.25,0,0.31916654850957005
+CLI-0132,Carlos,carlos.0132@example.com,Male,0,No,No,1,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check,19.75,19.75,1,0.5865237133549555
+CLI-0133,Esteban,esteban.0133@example.com,Female,1,Yes,No,62,Yes,Yes,Fiber optic,Yes,No,Yes,No,Yes,Yes,One year,Yes,Electronic check,104.85,6312.9,0,0.5730670880816457
+CLI-0134,Fernanda,fernanda.0134@example.com,Male,1,No,No,1,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,76.45,76.45,1,0.8718545565926499
+CLI-0135,Sebastián,sebastian.0135@example.com,Female,0,Yes,No,24,Yes,Yes,Fiber optic,No,No,Yes,No,No,No,Month-to-month,Yes,Mailed check,79.65,1928.7,0,0.5966824844958182
+CLI-0136,Carlos,carlos.0136@example.com,Female,0,Yes,Yes,7,Yes,No,DSL,Yes,No,No,No,No,No,Month-to-month,No,Mailed check,50.7,350.35,0,0.48978386459104545
+CLI-0137,Ricardo,ricardo.0137@example.com,Female,0,No,Yes,5,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,No,Mailed check,46.0,221.7,1,0.557093387212725
+CLI-0138,María,maria.0138@example.com,Female,0,No,No,13,No,No phone service,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,23.9,300.8,1,0.6223562420101975
+CLI-0139,Carolina,carolina.0139@example.com,Female,0,Yes,Yes,10,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check,20.15,220.8,0,0.1062903836233013
+CLI-0140,Javier,javier.0140@example.com,Female,1,No,No,2,No,No phone service,DSL,No,No,Yes,No,No,No,Month-to-month,Yes,Electronic check,30.4,78.65,1,0.7798108673327828
+CLI-0141,Carlos,carlos.0141@example.com,Male,0,Yes,Yes,64,Yes,Yes,Fiber optic,Yes,No,Yes,No,No,Yes,Two year,No,Bank transfer (automatic),93.4,5822.3,0,0.2134024397415255
+CLI-0142,Fernanda,fernanda.0142@example.com,Male,0,Yes,Yes,46,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Mailed check,20.1,936.85,0,0.0701857759736004
+CLI-0143,Ricardo,ricardo.0143@example.com,Male,0,Yes,Yes,63,Yes,Yes,Fiber optic,No,Yes,No,No,No,Yes,One year,Yes,Electronic check,91.35,5764.7,0,0.5238274363728174
+CLI-0144,Lucía,lucia.0144@example.com,Male,1,No,No,54,Yes,Yes,Fiber optic,No,Yes,No,No,No,Yes,Month-to-month,Yes,Electronic check,90.05,4931.8,0,0.6763846038671095
+CLI-0145,Daniela,daniela.0145@example.com,Female,0,No,Yes,1,Yes,No,DSL,No,No,Yes,No,No,Yes,Month-to-month,No,Electronic check,59.2,59.2,1,0.7484313629203044
+CLI-0146,Lucía,lucia.0146@example.com,Female,0,No,No,40,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check,20.15,804.85,0,0.06779430760566875
+CLI-0147,Fernanda,fernanda.0147@example.com,Female,0,Yes,Yes,46,No,No phone service,DSL,Yes,Yes,No,No,No,No,Month-to-month,No,Bank transfer (automatic),35.05,1620.25,0,0.3377819124291108
+CLI-0148,María,maria.0148@example.com,Male,1,Yes,No,33,Yes,No,Fiber optic,Yes,Yes,No,Yes,No,Yes,One year,Yes,Electronic check,93.55,3055.5,0,0.48428754679703906
+CLI-0149,Ana,ana.0149@example.com,Male,0,No,No,67,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic),20.5,1430.95,0,0.05264891538084912
+CLI-0150,Javier,javier.0150@example.com,Female,1,No,No,4,Yes,No,Fiber optic,No,Yes,No,No,No,No,Month-to-month,No,Electronic check,72.75,317.75,0,0.7749103698298387
+CLI-0151,Isabel,isabel.0151@example.com,Male,0,Yes,Yes,9,Yes,No,DSL,No,Yes,No,Yes,No,No,Month-to-month,No,Mailed check,54.8,452.8,0,0.4850501926861556
+CLI-0152,Paola,paola.0152@example.com,Male,0,Yes,Yes,61,Yes,Yes,Fiber optic,No,No,Yes,No,Yes,Yes,One year,Yes,Electronic check,99.9,6241.35,0,0.6103700911294503
+CLI-0153,Ana,ana.0153@example.com,Female,0,Yes,Yes,10,Yes,No,DSL,No,No,Yes,Yes,No,No,Month-to-month,No,Credit card (automatic),55.2,528.35,1,0.4890321519884954
+CLI-0154,Ana,ana.0154@example.com,Male,0,Yes,Yes,24,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,Yes,Credit card (automatic),20.8,469.65,0,0.1608648961651166
+CLI-0155,Lucía,lucia.0155@example.com,Male,0,Yes,Yes,11,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,74.35,834.2,1,0.7607375708007289
+CLI-0156,Fernanda,fernanda.0156@example.com,Male,1,Yes,No,72,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,Yes,One year,Yes,Credit card (automatic),97.25,7133.1,0,0.33242423137671073
+CLI-0157,Paola,paola.0157@example.com,Female,0,No,No,8,Yes,Yes,Fiber optic,No,No,No,No,Yes,No,Month-to-month,Yes,Electronic check,87.05,762.1,1,0.8153194737680457
+CLI-0158,Diego,diego.0158@example.com,Male,0,Yes,No,60,Yes,Yes,Fiber optic,Yes,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Bank transfer (automatic),109.45,6572.85,0,0.5517634510591288
+CLI-0159,Valeria,valeria.0159@example.com,Male,1,Yes,No,16,Yes,No,Fiber optic,No,Yes,No,No,No,No,Month-to-month,Yes,Credit card (automatic),74.3,1178.25,1,0.6271547708880171
+CLI-0160,Santiago,santiago.0160@example.com,Female,0,No,No,1,Yes,No,DSL,No,No,No,No,No,Yes,Month-to-month,Yes,Electronic check,55.4,55.4,1,0.8001947083749701
+CLI-0161,Carlos,carlos.0161@example.com,Female,0,Yes,Yes,72,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,No,Credit card (automatic),89.8,6510.45,0,0.046307038020340495
+CLI-0162,Daniela,daniela.0162@example.com,Female,1,Yes,No,45,Yes,No,Fiber optic,No,No,Yes,No,No,Yes,Month-to-month,Yes,Electronic check,86.1,3861.45,0,0.6650258035531931
+CLI-0163,Carlos,carlos.0163@example.com,Male,0,No,No,15,Yes,Yes,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,49.0,749.25,0,0.6135129722180146
+CLI-0164,Gabriela,gabriela.0164@example.com,Male,1,Yes,No,54,Yes,Yes,Fiber optic,No,No,Yes,No,Yes,Yes,Month-to-month,Yes,Credit card (automatic),99.05,5295.7,0,0.6483091506379463
+CLI-0165,Pablo,pablo.0165@example.com,Female,0,No,No,36,Yes,No,Fiber optic,No,No,Yes,Yes,No,Yes,Month-to-month,Yes,Electronic check,87.55,3078.1,1,0.6352067857490532
+CLI-0166,Isabel,isabel.0166@example.com,Female,0,Yes,Yes,33,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Bank transfer (automatic),24.25,838.5,0,0.23698211731680782
+CLI-0167,Sofía,sofia.0167@example.com,Female,0,Yes,Yes,22,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check,19.9,400.3,0,0.23862831534496687
+CLI-0168,Fernanda,fernanda.0168@example.com,Female,0,Yes,No,72,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic),19.4,1496.45,0,0.021322767443323728
+CLI-0169,Ricardo,ricardo.0169@example.com,Female,0,No,No,3,Yes,No,DSL,No,No,Yes,No,Yes,Yes,One year,Yes,Electronic check,69.95,220.45,0,0.6311181106081846
+CLI-0170,Diego,diego.0170@example.com,Female,0,No,No,67,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Electronic check,20.55,1343.4,0,0.13086173824962427
+CLI-0171,Sebastián,sebastian.0171@example.com,Female,0,No,No,16,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,No,Electronic check,72.65,1194.3,1,0.683848124335263
+CLI-0172,Diego,diego.0172@example.com,Male,0,Yes,Yes,39,Yes,Yes,Fiber optic,No,No,Yes,No,Yes,Yes,One year,No,Electronic check,100.0,3835.55,0,0.5833536986612126
+CLI-0173,Valeria,valeria.0173@example.com,Female,1,Yes,No,8,Yes,Yes,Fiber optic,No,Yes,No,No,No,No,Month-to-month,Yes,Credit card (automatic),80.65,633.3,1,0.752434250026018
+CLI-0174,Daniela,daniela.0174@example.com,Female,0,No,No,13,No,No phone service,DSL,No,No,Yes,No,Yes,Yes,Month-to-month,No,Electronic check,49.15,649.4,0,0.595141563197758
+CLI-0175,Ricardo,ricardo.0175@example.com,Male,0,No,No,6,No,No phone service,DSL,No,Yes,No,No,No,No,Month-to-month,Yes,Credit card (automatic),30.5,208.7,1,0.6376239492783421
+CLI-0176,Camila,camila.0176@example.com,Female,0,No,No,28,Yes,No,DSL,No,No,Yes,No,Yes,No,Month-to-month,Yes,Bank transfer (automatic),59.55,1646.45,0,0.4295721299776684
+CLI-0177,Ricardo,ricardo.0177@example.com,Male,0,Yes,Yes,40,Yes,Yes,Fiber optic,No,No,Yes,No,No,No,Month-to-month,Yes,Electronic check,81.2,3292.3,0,0.6619309520825069
+CLI-0178,Pablo,pablo.0178@example.com,Female,0,Yes,Yes,35,No,No phone service,DSL,No,No,No,Yes,Yes,No,One year,No,Mailed check,40.9,1383.6,0,0.22682087425700895
+CLI-0179,Javier,javier.0179@example.com,Male,0,No,No,38,Yes,No,Fiber optic,No,No,No,No,No,No,One year,Yes,Bank transfer (automatic),70.45,2597.6,1,0.4110487936025287
+CLI-0180,Javier,javier.0180@example.com,Male,1,Yes,No,71,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic),24.85,1901.0,0,0.031790250168633336
+CLI-0181,Santiago,santiago.0181@example.com,Male,0,No,No,2,Yes,No,Fiber optic,No,No,No,No,Yes,No,Month-to-month,No,Electronic check,79.0,143.65,1,0.8072487464935977
+CLI-0182,Daniela,daniela.0182@example.com,Male,0,Yes,Yes,21,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check,19.8,350.1,0,0.1442951825684531
+CLI-0183,Andrés,andres.0183@example.com,Female,0,Yes,No,52,Yes,No,DSL,Yes,No,Yes,No,Yes,No,One year,Yes,Mailed check,64.3,3410.6,0,0.21412227775724818
+CLI-0184,Lucía,lucia.0184@example.com,Male,1,Yes,No,53,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,Yes,Month-to-month,Yes,Electronic check,101.9,5549.4,1,0.735819495105747
+CLI-0185,Luis,luis.0185@example.com,Male,0,Yes,No,32,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,Yes,Month-to-month,Yes,Credit card (automatic),98.85,3145.9,0,0.6561450184822699
+CLI-0186,Mateo,mateo.0186@example.com,Male,1,Yes,No,65,Yes,Yes,Fiber optic,Yes,No,No,No,Yes,Yes,One year,Yes,Electronic check,100.75,6674.65,0,0.5726469149057243
+CLI-0187,Daniela,daniela.0187@example.com,Female,0,Yes,Yes,35,Yes,Yes,DSL,Yes,No,Yes,Yes,Yes,No,Month-to-month,No,Electronic check,72.25,2568.55,1,0.3922069389959945
+CLI-0188,Isabel,isabel.0188@example.com,Male,0,No,No,27,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Bank transfer (automatic),20.1,562.6,0,0.14164017137266838
+CLI-0189,Sebastián,sebastian.0189@example.com,Male,0,Yes,Yes,49,Yes,Yes,Fiber optic,No,No,No,Yes,Yes,Yes,One year,Yes,Electronic check,97.95,4917.9,0,0.5828092534287816
+CLI-0190,Pablo,pablo.0190@example.com,Male,0,Yes,Yes,17,Yes,No,Fiber optic,No,No,No,No,Yes,No,Month-to-month,No,Electronic check,80.85,1400.85,1,0.6455686952520214
+CLI-0191,Sofía,sofia.0191@example.com,Female,0,No,No,1,Yes,No,DSL,No,No,Yes,Yes,Yes,Yes,One year,No,Credit card (automatic),74.1,74.1,0,0.5207201534179753
+CLI-0192,Ricardo,ricardo.0192@example.com,Male,1,Yes,No,4,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Mailed check,74.4,306.6,1,0.7713907941526897
+CLI-0193,Fernanda,fernanda.0193@example.com,Male,0,Yes,No,72,Yes,Yes,DSL,No,Yes,Yes,Yes,Yes,Yes,Two year,No,Bank transfer (automatic),85.95,6151.9,0,0.05767749214505185
+CLI-0194,Mauricio,mauricio.0194@example.com,Male,0,No,No,7,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Mailed check,18.95,130.55,0,0.37704934790969497
+CLI-0195,Lucía,lucia.0195@example.com,Female,0,No,No,64,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Credit card (automatic),110.5,7069.25,0,0.33515987013218446
+CLI-0196,Gabriela,gabriela.0196@example.com,Female,0,No,No,61,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Bank transfer (automatic),19.45,1336.35,0,0.1086812701036124
+CLI-0197,Andrés,andres.0197@example.com,Male,0,No,No,19,Yes,Yes,Fiber optic,No,No,No,No,No,Yes,Month-to-month,Yes,Bank transfer (automatic),86.0,1532.45,1,0.6443099431047771
+CLI-0198,Esteban,esteban.0198@example.com,Male,0,Yes,No,59,No,No phone service,DSL,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check,44.3,2666.75,0,0.5607619573131633
+CLI-0199,Paola,paola.0199@example.com,Male,0,Yes,Yes,7,Yes,No,Fiber optic,No,Yes,No,Yes,Yes,No,Month-to-month,Yes,Electronic check,89.75,608.8,1,0.7658323793411164
+CLI-0200,Jaher,jaher.0200@example.com,Female,0,No,No,3,Yes,No,Fiber optic,Yes,Yes,No,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,89.9,269.7,0,0.7762707757132946
