@@ -23,16 +23,6 @@ Abra http://localhost:8501.
 4. **Lanzar campaña por correo**: el agente envía a cada cliente su plan. Sin configuración corre en modo demostración y no envía nada.
 5. **Calidad del modelo** y **Sistema**: métricas en la partición de prueba, umbral de alerta y límites de uso.
 
-## Envío de correos (opcional)
-
-Sin `secrets.toml` el botón simula el envío (no sale ningún correo). Cada persona crea su propio `secrets.toml` con sus datos. Con él, solo envía a las direcciones de `allowed`, como máximo un correo por dirección y 5 por envío. Los clientes de la muestra tienen correos sintéticos (`example.com`); el cliente `CLI-0200` (Jaher) usa su nombre y una dirección sintética, o los de `demo_name` y `demo_email` si los define.
-
-1. En la cuenta de Gmail que enviará: active la verificación en dos pasos y cree una contraseña de aplicación en https://myaccount.google.com/apppasswords.
-2. Copie `.streamlit/secrets.toml.example` como `.streamlit/secrets.toml` y complete `username`, `app_password`, `demo_name`, `demo_email` y `allowed`.
-3. Reinicie el portal: el panel pasa de «Modo demostración» a «Envío real».
-
-`secrets.toml` está en `.gitignore`: no lo suba ni lo comparta. Enviar a clientes reales exige su consentimiento.
-
 ## Pruebas
 
 ```bash
