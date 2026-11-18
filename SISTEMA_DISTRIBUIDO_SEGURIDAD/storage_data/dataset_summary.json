@@ -1,0 +1,42 @@
+{
+  "seed": 42,
+  "generated_at": "2026-11-17 23:23:10",
+  "datasets": {
+    "small": {
+      "rows": 1000,
+      "columns": 15,
+      "csv_path": "C:\\Users\\mayte.otavalo\\Desktop\\MAYTE\\SISTEMAS OPERATIVOS\\SISTEMA_DISTRIBUIDO_SEGURIDAD\\storage_data\\dataset_small.csv",
+      "parquet_path": "C:\\Users\\mayte.otavalo\\Desktop\\MAYTE\\SISTEMAS OPERATIVOS\\SISTEMA_DISTRIBUIDO_SEGURIDAD\\storage_data\\dataset_small.parquet",
+      "csv_size_bytes": 280824,
+      "parquet_size_bytes": 89901,
+      "compression_ratio_csv_over_parquet": 3.124,
+      "initial_csv_write_ms": 25.97,
+      "initial_parquet_write_ms": 81.091,
+      "logical_equivalence_verified": true
+    },
+    "medium": {
+      "rows": 5000,
+      "columns": 15,
+      "csv_path": "C:\\Users\\mayte.otavalo\\Desktop\\MAYTE\\SISTEMAS OPERATIVOS\\SISTEMA_DISTRIBUIDO_SEGURIDAD\\storage_data\\dataset_medium.csv",
+      "parquet_path": "C:\\Users\\mayte.otavalo\\Desktop\\MAYTE\\SISTEMAS OPERATIVOS\\SISTEMA_DISTRIBUIDO_SEGURIDAD\\storage_data\\dataset_medium.parquet",
+      "csv_size_bytes": 1408380,
+      "parquet_size_bytes": 271821,
+      "compression_ratio_csv_over_parquet": 5.181,
+      "initial_csv_write_ms": 83.196,
+      "initial_parquet_write_ms": 17.186,
+      "logical_equivalence_verified": true
+    },
+    "large": {
+      "rows": 20000,
+      "columns": 15,
+      "csv_path": "C:\\Users\\mayte.otavalo\\Desktop\\MAYTE\\SISTEMAS OPERATIVOS\\SISTEMA_DISTRIBUIDO_SEGURIDAD\\storage_data\\dataset_large.csv",
+      "parquet_path": "C:\\Users\\mayte.otavalo\\Desktop\\MAYTE\\SISTEMAS OPERATIVOS\\SISTEMA_DISTRIBUIDO_SEGURIDAD\\storage_data\\dataset_large.parquet",
+      "csv_size_bytes": 5648025,
+      "parquet_size_bytes": 737548,
+      "compression_ratio_csv_over_parquet": 7.658,
+      "initial_csv_write_ms": 334.952,
+      "initial_parquet_write_ms": 28.667,
+      "logical_equivalence_verified": true
+    }
+  }
+}
