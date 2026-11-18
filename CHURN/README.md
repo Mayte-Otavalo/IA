@@ -1,74 +1,64 @@
-# Guía de Uso: Tarea 7 - RetenTel AI (Telco Churn ML, NSGA-III, XAI & Business Pitch)
+# RetenTel AI: portal de retención de clientes
 
----
+Portal en Streamlit sobre el modelo CatBoost del equipo (IBM Telco Churn, 7.043 clientes). Estima el riesgo de abandono, elige el plan de retención que más valor deja y puede enviar ese plan por correo. No entrena nada: carga el modelo y lo evalúa.
 
-##  Contenido del Proyecto
+## Instalar y ejecutar
 
-- **`app.py`**: Aplicación web interactiva en **Streamlit** con 5 módulos:
-  1. *A. Análisis Exploratorio (EDA) & ADASYN*: Distribución de clases, impacto del remuestreo adaptativo y KPIs.
-  2. *B. Desempeño y Pareto NSGA-III*: Comparativa de modelos (**Regresión Logística** vs **CatBoost**) bajo 4 objetivos de optimización, visualización del Frente de Pareto y calibración probabilística con **Brier Score**.
-  3. *C. Predicción & Explicabilidad (XAI)*: Formulario interactivo, gauge de riesgo, desgloses **SHAP** y **LIME**, **Índice de Correlación** de top features e **Intervención Contrafactual (What-If)** prescriptiva.
-  4. *D. Aplicación de Negocio & Pitch*: Simulador financiero de ROI interactivo (+440% ROI) y matriz prescriptiva.
-  5. *E. Asistente IA RetenTel (Chatbot RAG Documental Guardrailed)*: Chatbot conversacional con guardrail estricto que **solo responde preguntas basadas en la documentación oficial del proyecto**, bloqueando consultas fuera de tema.
-- **`train_and_evaluate.py`**: Script de entrenamiento, balanceo con ADASYN, optimización multiobjetivo con NSGA-III, cálculo de métricas y serialización de modelos.
-- **`business_pitch.md`**: Propuesta de negocio ejecutiva (*RetenTel AI*), justificación financiera y guion de negociación comercial para el roleplay presencial.
-- **`models/`**: Artefactos serializados (`champion_pipeline.joblib`, `preprocessor.joblib`, `metadata.json`).
-- **`Telco-Customer-Churn.csv`**: Dataset de IBM / Kaggle con 7,043 clientes.
+Requiere Python 3.12 (probado) y funciona sin ninguna configuración adicional.
 
----
+```bash
+python -m venv .venv
+.venv\Scripts\activate          # Linux/macOS: source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m streamlit run app.py
+```
 
-##  Opción A: Ejecución en Google Colab (Recomendada)
-1. Abre [Google Colab](https://colab.research.google.com/).
-2. Haz clic en **Subir (Upload)** y selecciona el archivo [`Tarea7_Churn_ML_Optimization_XAI_Pitch.ipynb`](file:///C:/Users/mayte.otavalo/Desktop/MAYTE/MACHINE/IA/CHURN/Tarea7_Churn_ML_Optimization_XAI_Pitch.ipynb).
-3. En el menú superior de Colab, selecciona **Entorno de ejecución $\rightarrow$ Ejecutar todas**.
-4. En la celda final de la **Parte 5**:
-   - Se imprimirá tu dirección IP pública (ejemplo: `34.125.80.20`).
-   - Se generará un enlace público de `localtunnel` (ejemplo: `https://famous-fox-42.loca.lt`).
-   - Haz clic en el enlace, pega tu IP en el campo de contraseña ("Tunnel Password") y haz clic en "Submit".
-   - ¡Tu aplicación Streamlit se abrirá en vivo e interactiva directamente en tu navegador!
+Abra http://localhost:8501.
 
----
+## Cómo usarlo
 
-## Opción B: Ejecución Local en tu Computadora
-1. **Entrenar y verificar el modelo:**
-   ```bash
-   python train_and_evaluate.py
-   ```
-2. **Lanzar la aplicación interactiva de Streamlit:**
-   ```bash
-   streamlit run app.py
-   ```
-3. Se abrirá automáticamente en tu navegador en: `http://localhost:8501`.
+1. **Analizar cliente**: complete el formulario y vea el riesgo, su evolución con la antigüedad y el plan de retención recomendado.
+2. **Cartera**: cargue un CSV (mismas columnas que `assets/sample_test_data.csv`) o use la muestra; ordena por riesgo y descarga la lista de contacto.
+3. **Campaña**: fije un presupuesto; el portal elige a quién contactar y con qué plan, y compara contra ordenar solo por riesgo.
+4. **Lanzar campaña por correo**: el agente envía a cada cliente su plan. Sin configuración corre en modo demostración y no envía nada.
+5. **Calidad del modelo** y **Sistema**: métricas en la partición de prueba, umbral de alerta y límites de uso.
 
----
+## Envío de correos (opcional)
 
-## Resumen de Resultados Técnicos
+Sin `secrets.toml` el botón simula el envío (no sale ningún correo). Cada persona crea su propio `secrets.toml` con sus datos. Con él, solo envía a las direcciones de `allowed`, como máximo un correo por dirección y 5 por envío. Los clientes de la muestra tienen correos sintéticos (`example.com`); el cliente `CLI-0200` (Jaher) usa su nombre y una dirección sintética, o los de `demo_name` y `demo_email` si los define.
 
-### 1. Comparativa de Modelos Base (con Balanceo ADASYN)
-| Modelo | Recall | F1-Score | F2-Score ($\beta=2$) | ROC-AUC | Brier Score | Latencia (ms / 1k) | Tamaño (KB) |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Regresión Logística** | 83.16% | 0.6385 | 0.7266 | 0.8396 | 0.1767 | ~0.5 ms | 0.8 KB |
-| **CatBoost (Campeón NSGA-III)** | 71.39% | 0.6305 | **0.6780** | **0.8442** | **0.1467** | ~5.9 ms | 12.7 KB |
+1. En la cuenta de Gmail que enviará: active la verificación en dos pasos y cree una contraseña de aplicación en https://myaccount.google.com/apppasswords.
+2. Copie `.streamlit/secrets.toml.example` como `.streamlit/secrets.toml` y complete `username`, `app_password`, `demo_name`, `demo_email` y `allowed`.
+3. Reinicie el portal: el panel pasa de «Modo demostración» a «Envío real».
 
-> [!NOTE]
-> **Calibración con Brier Score:** El modelo CatBoost optimizado alcanza un Brier Score de **0.1467** (frente a 0.25 de azar), certificando que las probabilidades de fuga son consistentes y fiables para la toma de decisiones comerciales.
+`secrets.toml` está en `.gitignore`: no lo suba ni lo comparta. Enviar a clientes reales exige su consentimiento.
 
-### 2. Optimización Multiobjetivo (NSGA-III)
-Se optimizaron 4 objetivos simultáneos:
-1. **Maximizar F2-Score** (priorización 2x de Recall para no dejar escapar clientes en fuga).
-2. **Minimizar Latencia de Inferencia** (scoring en streaming < 6 ms por 1k).
-3. **Minimizar Tamaño del Modelo** (< 13 KB para microservicios edge).
-4. **Maximizar ROC-AUC** (discriminación global > 0.84).
+## Pruebas
 
-### 3. Explicabilidad XAI e Índice de Correlación SHAP
-- `Contract_Two year`: $r = -0.9929$ (Fuerte factor protector contra el churn).
-- `tenure`: $r = -0.7750$ (Mayor antigüedad reduce drásticamente el riesgo).
-- `InternetService_Fiber optic`: $r = +0.9972$ (Correlación directa con aumento de fuga sin soporte técnico).
-- `PaymentMethod_Electronic check`: $r = +0.9936$ (Fricción en pagos manuales).
-- `TechSupport_Yes`: $r = -0.9837$ (Blindaje de retención).
+```bash
+python -m pip install -r requirements-dev.txt
+python -m pytest -q
+```
 
-### 4. Motor Contrafactual (What-If)
-Para clientes de alto riesgo (ej. 76.5% probabilidad de churn), el algoritmo contrafactual identifica que modificando el contrato a anual, bonificando soporte técnico y habilitando débito automático se reduce la probabilidad a **17.8%** (reducción neta de **58.8%**).
+## Docker
 
-### 5. Chatbot RAG Guardrailed
-Incluye un módulo conversacional con guardrail de seguridad estricto que **solo responde a preguntas soportadas por la documentación del proyecto** (métrica ROI, NSGA-III, ADASYN, Brier score, XAI), y devuelve un mensaje de advertencia claro ante consultas fuera de tema.
+```bash
+docker build -t retentel-ai .
+docker run -p 8501:8501 retentel-ai
+```
+
+La imagen no se ha construido todavía en ningún equipo: no está verificada.
+
+## Estructura
+
+- `core.py`, `plans.py`, `mailer.py`: modelo y puntuación, planes y campañas, envío de correo. Sin Streamlit.
+- `app.py`, `views/`, `components.py`, `static/`: interfaz.
+- `assets/`: modelo (`champion_pipeline.joblib`, `metadata.json`) y datos.
+- `tests/`: pruebas; ninguna usa la red.
+
+El modelo se reentrena en el notebook de Colab del equipo; copie su carpeta `models/` a `assets/` y ejecute las pruebas.
+
+## Límites
+
+- El umbral de alerta (40 %) se eligió sobre la partición de prueba; falta validarlo con validación cruzada.
+- Los efectos de planes y campañas son estimaciones del modelo, no resultados medidos: valídelos con un piloto.

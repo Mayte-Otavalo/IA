@@ -312,7 +312,7 @@ button[data-variant="segmented_control"][data-selected="true"] { background: var
 .done-text > b { display: block; font-size: 1.5rem; font-weight: 300; letter-spacing: -0.01em; margin-bottom: 6px; color: var(--ink); }
 @keyframes sent-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .st-key-send_launch button, .done, .r-wire span, .wire i, .agent-live i, .steps li i { animation: none !important; } }
-.chip.tag { background: linear-gradient(135deg, #061B31 0%, #0D253D 55%, #14407A 100%); box-shadow: var(--sh-float); color: #fff; padding: 16px 22px; border-radius: 10px; font-size: 0.98rem; }
+.chip.tag { background: linear-gradient(135deg, #061B31 0%, #0D253D 55%, #14407A 100%); box-shadow: var(--sh-float); color: #fff; padding: 9px 18px; border-radius: 10px; font-size: 0.95rem; }
 .chip.tag b { color: #fff; }
 .chip.tag i { width: 8px; height: 8px; border: none; border-radius: 50%; background: #2ECC71; animation: live 2s ease-out infinite; }
 .chip.tag.off i { background: #8898AA; animation: none; }
